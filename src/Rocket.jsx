@@ -40,6 +40,7 @@ export function Rocket(props) {
                             geometry={nodes['Rocket_Ship_01_Material_#42_0'].geometry}
                             material={materials.Material_42}
                         />
+                        {/*This is blue window*/}
                         <mesh
                             castShadow
                             receiveShadow

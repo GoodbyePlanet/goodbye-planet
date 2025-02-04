@@ -1,7 +1,6 @@
 import React, {Suspense} from 'react'
 import {Canvas} from '@react-three/fiber'
-import {Environment, Loader, OrbitControls, PerspectiveCamera, Stars, useGLTF} from '@react-three/drei'
-import {Earth1} from "./Earth1.jsx";
+import {Environment, Loader, OrbitControls, Stars} from '@react-three/drei'
 import {Earth} from "./Earth.jsx";
 import {Rocket} from "./Rocket.jsx";
 
@@ -39,7 +38,7 @@ export default function App() {
                 }}
             >
                 <fog attach="fog" args={['#272730', 16, 30]}/>
-                {/*<ambientLight intensity={1.75}/>*/}
+                <ambientLight intensity={1.75}/>
                 {/*<PerspectiveCamera makeDefault position={[0, 0, 16]} fov={75}>*/}
                 {/*    <pointLight intensity={1} position={[-10, -25, -10]}/>*/}
                 {/*    <spotLight castShadow intensity={8.25} angle={1.2} penumbra={1} position={[25, 20, 15]}*/}
@@ -48,12 +47,12 @@ export default function App() {
                 {/*<CameraPositionControl/>*/}
                 <Suspense fallback={null}>
                     <group position={[-0.3, 0, 0]}>
-                        <Earth />
-                        <Rocket />
+                        <Earth/>
+                        <Rocket/>
                     </group>
-                    <Environment preset="studio" />
+                    <Environment preset="studio"/>
                 </Suspense>
-                <OrbitControls autoRotate={false} enablePan={false} enableZoom={true} />
+                <OrbitControls autoRotate={false} enablePan={false} enableZoom={true}/>
                 <Stars radius={200} depth={50} count={3000} factor={5}/>
             </Canvas>
             <Loader/>
