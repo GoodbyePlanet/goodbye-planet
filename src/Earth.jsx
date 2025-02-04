@@ -15,14 +15,10 @@ export function Earth(props) {
         <group rotation={[0, 0, 0]} {...props} dispose={null}>
             <group scale={0.005}>
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.earth001_earth_0.geometry}
                     material={materials.earth}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.cloud002_proprty_0.geometry}
                     material={materials.proprty}
                     position={[74.256, 109.024, -33.825]}
@@ -30,8 +26,6 @@ export function Earth(props) {
                     scale={0.177}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.cloud004_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-117.7, 29.651, 86.895]}
@@ -39,8 +33,6 @@ export function Earth(props) {
                     scale={0.171}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.cloud006_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-128.882, 81.994, 10.342]}
@@ -48,8 +40,6 @@ export function Earth(props) {
                     scale={0.196}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.cloud007_proprty_0.geometry}
                     material={materials.proprty}
                     position={[66.057, -113.547, 35.058]}
@@ -57,8 +47,6 @@ export function Earth(props) {
                     scale={0.172}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.cloud009_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-15.106, 107.607, -111.939]}
@@ -66,620 +54,13 @@ export function Earth(props) {
                     scale={0.167}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.cloud011_proprty_0.geometry}
                     material={materials.proprty}
                     position={[147.522, 23.645, 24.105]}
                     rotation={[1.094, 0.016, -1.231]}
                     scale={0.224}
                 />
-                {/*<mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house001_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[10.289, 68.065, 78.637]}
-                    rotation={[0.913, 0.283, -0.029]}
-                    scale={[0.026, 0.026, 0.021]}
-                />
                 <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house002_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[94.474, -53.271, 30.684]}
-                    rotation={[2.85, 0.033, -1.11]}
-                    scale={[0.024, 0.024, 0.019]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house003_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-78.94, 30.151, -67.857]}
-                    rotation={[-1.025, -0.075, 0.831]}
-                    scale={[0.027, 0.027, 0.022]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house004_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[110.203, -17.066, 9.845]}
-                    rotation={[-2.939, 0.097, -1.226]}
-                    scale={[0.025, 0.025, 0.02]}
-                />*/}
-                {/*   <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house005_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-101.524, -14.492, -52.81]}
-                    rotation={[-0.903, -0.265, 1.256]}
-                    scale={[0.027, 0.027, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house006_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-71.904, 40.756, -74.673]}
-                    rotation={[-1.152, 0.198, 1.036]}
-                    scale={[0.027, 0.027, 0.022]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house007_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[59.778, -3.22, 89.487]}
-                    rotation={[1.84, 0.443, -0.544]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house008_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[12.74, 33.242, 100.691]}
-                    rotation={[1.271, 0.365, -0.159]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house009_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[106.269, -29.965, 17.968]}
-                    rotation={[-2.568, 0.275, -1.358]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house010_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[109.646, -9.518, 31.355]}
-                    rotation={[-1.919, 0.083, -1.472]}
-                    scale={[0.027, 0.027, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house011_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[108.476, -22.123, 33.236]}
-                    rotation={[-2.332, -0.001, -1.457]}
-                    scale={[0.027, 0.027, 0.022]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house012_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[99.396, -47.118, 48.44]}
-                    rotation={[3.055, 0.093, -0.471]}
-                    scale={[0.024, 0.024, 0.019]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house013_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[105.828, -7.636, 46.791]}
-                    rotation={[0.653, -0.284, -1.175]}
-                    scale={[0.026, 0.026, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house014_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[83.899, 2.014, 76.762]}
-                    rotation={[2.582, 0.648, -0.748]}
-                    scale={[0.026, 0.026, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house015_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[89.871, -4.48, 67.515]}
-                    rotation={[2.051, 0.366, -0.729]}
-                    scale={[0.027, 0.027, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house016_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[83.591, -19.516, 69.987]}
-                    rotation={[2.026, 0.341, -0.72]}
-                    scale={[0.024, 0.024, 0.019]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house017_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[82.055, -6.652, 73.438]}
-                    rotation={[1.514, -0.276, -0.703]}
-                    scale={[0.026, 0.026, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house018_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[63.93, 9.523, 88.741]}
-                    rotation={[1.975, 0.219, -0.386]}
-                    scale={[0.027, 0.027, 0.022]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house019_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-75.751, 22.862, -75.901]}
-                    rotation={[-1.564, 0.248, 1.024]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house020_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[42.049, 40.613, 98.212]}
-                    rotation={[1.418, 0.307, -0.009]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house021_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[106.672, -23.841, 51.454]}
-                    rotation={[1.444, 0.09, -1.179]}
-                    scale={[0.026, 0.026, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house022_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[106.195, -14.765, 48.886]}
-                    rotation={[0.978, -0.106, -1.183]}
-                    scale={[0.026, 0.026, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house023_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[109.911, -26.16, 44.183]}
-                    rotation={[1.189, -0.018, -1.17]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house024_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[109.252, -14.35, 39.911]}
-                    rotation={[1.204, 0.113, -1.398]}
-                    scale={[0.028, 0.028, 0.022]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house025_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[84.855, -70.376, 32.828]}
-                    rotation={[2.333, -0.198, -1.032]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house026_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[109.637, -2.399, 34.966]}
-                    rotation={[1.163, -0.112, -1.458]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house027_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[110.385, -3.289, 29.619]}
-                    rotation={[2.29, 0.055, -1.421]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house028_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[108.386, -7.888, 41.184]}
-                    rotation={[1.351, -0.089, -1.439]}
-                    scale={[0.024, 0.024, 0.019]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house029_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-22.447, 66.923, 75.502]}
-                    rotation={[0.446, 0.85, 0.17]}
-                    scale={[0.024, 0.024, 0.019]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house030_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-8.467, 50.905, 91.791]}
-                    rotation={[0.893, 0.775, 0.173]}
-                    scale={[0.026, 0.026, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house031_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[59.224, 2.255, 90.903]}
-                    rotation={[1.797, 0.14, -0.592]}
-                    scale={[0.026, 0.026, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house032_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[65.901, 1.743, 86.367]}
-                    rotation={[1.667, -0.054, -0.587]}
-                    scale={[0.027, 0.027, 0.022]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house034_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-101.799, 13.403, -44.758]}
-                    rotation={[-0.748, -0.214, 1.005]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house035_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-99.183, 6.477, -52.888]}
-                    rotation={[-1.722, 0.394, 1.104]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house036_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-10.536, 66.133, 78.527]}
-                    rotation={[0.874, -0.342, 0.098]}
-                    scale={[0.027, 0.027, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house037_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[1.984, 67.93, 78.469]}
-                    rotation={[0.936, -0.802, 0.132]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house038_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-7.295, 59.549, 84.819]}
-                    rotation={[0.897, -0.549, 0.108]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house039_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-27.765, 63.464, 77.985]}
-                    rotation={[0.928, -0.395, 0.15]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house040_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-16.463, 64.732, 78.973]}
-                    rotation={[0.985, -0.689, 0.18]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house041_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-15.439, 58.555, 84.372]}
-                    rotation={[0.673, 0.953, 0.24]}
-                    scale={[0.027, 0.027, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house043_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[6.34, 25.578, 103.936]}
-                    rotation={[1.437, -0.041, -0.044]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house044_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-95.588, -1.608, -60.923]}
-                    rotation={[-1.613, 0.165, 0.953]}
-                    scale={[0.027, 0.027, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house045_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-100.036, -0.173, -54.539]}
-                    rotation={[-1.286, -0.073, 0.937]}
-                    scale={[0.028, 0.028, 0.022]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house046_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-97.918, -13.504, -59.952]}
-                    rotation={[-0.8, -0.388, 1.052]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house047_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-83.499, 15.81, -69.346]}
-                    rotation={[-0.867, -0.269, 0.878]}
-                    scale={[0.027, 0.027, 0.022]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house048_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-90.31, 15.676, -61.24]}
-                    rotation={[-1.421, 0.216, 0.862]}
-                    scale={[0.024, 0.024, 0.019]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house049_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-91.327, 6.116, -64]}
-                    rotation={[-0.692, -0.398, 0.935]}
-                    scale={[0.024, 0.024, 0.019]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house050_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-81.588, 5.131, -74.912]}
-                    rotation={[-0.825, -0.459, 0.886]}
-                    scale={[0.026, 0.026, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house051_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-77.528, 15.105, -76.419]}
-                    rotation={[-2.109, 0.633, 1.038]}
-                    scale={[0.026, 0.026, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house052_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-89.149, 1.382, -68.336]}
-                    rotation={[-0.866, -0.428, 0.868]}
-                    scale={[0.024, 0.024, 0.019]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house053_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[34.812, 11.529, 99.914]}
-                    rotation={[1.315, -0.554, -0.288]}
-                    scale={[0.027, 0.027, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house054_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-21.275, 44.363, 93.962]}
-                    rotation={[0.952, -0.183, 0.176]}
-                    scale={[0.024, 0.024, 0.019]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house055_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-29.441, 58.403, 81.474]}
-                    rotation={[0.935, -0.087, 0.174]}
-                    scale={[0.027, 0.027, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house056_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-107.52, 10.671, -29.064]}
-                    rotation={[-0.259, -0.226, 1.299]}
-                    scale={[0.028, 0.028, 0.022]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house057_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-85.135, 25.936, -62.331]}
-                    rotation={[-0.686, -0.213, 0.909]}
-                    scale={[0.027, 0.027, 0.022]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house058_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-90, 29.762, -52.36]}
-                    rotation={[-1.175, 0.182, 0.901]}
-                    scale={[0.027, 0.027, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house059_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[73.197, -19.404, 77.19]}
-                    rotation={[1.85, 0.027, -0.693]}
-                    scale={[0.028, 0.028, 0.022]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house060_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[75.025, -37.002, 71.001]}
-                    rotation={[2.328, 0.525, -0.829]}
-                    scale={[0.024, 0.024, 0.019]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house061_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[62.07, -18.16, 87.055]}
-                    rotation={[2.315, 0.514, -0.823]}
-                    scale={[0.026, 0.026, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house062_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-104.207, 17.629, -33.984]}
-                    rotation={[-0.522, -0.057, 1.079]}
-                    scale={[0.026, 0.026, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house063_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-8.503, 17.526, 105.328]}
-                    rotation={[1.316, 0.639, 0.133]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house064_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-21.378, 16.282, 104.151]}
-                    rotation={[1.455, -0.514, 0.122]}
-                    scale={[0.026, 0.026, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house065_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[60.11, -10.838, 89.754]}
-                    rotation={[1.36, -0.285, -0.637]}
-                    scale={[0.028, 0.028, 0.022]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house066_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[65.688, -7.11, 85.854]}
-                    rotation={[1.663, 0.139, -0.615]}
-                    scale={[0.027, 0.027, 0.021]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house067_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-94.276, 12.107, -57.739]}
-                    rotation={[-0.609, -0.408, 1.036]}
-                    scale={[0.025, 0.025, 0.02]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house069_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-93.272, -6.47, -66.357]}
-                    rotation={[-0.678, -0.369, 1.01]}
-                    scale={[0.028, 0.028, 0.022]}
-                />
-                <mesh
-                    castShadow
-                    receiveShadow
-                    geometry={nodes.house070_proprty_0.geometry}
-                    material={materials.proprty}
-                    position={[-36.644, 22.736, 98.111]}
-                    rotation={[1.162, 0.567, 0.464]}
-                    scale={[0.024, 0.024, 0.019]}
-                />*/}
-                <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green001_proprty_0.geometry}
                     material={materials.proprty}
                     position={[13.291, 94.778, 40.1]}
@@ -687,8 +68,6 @@ export function Earth(props) {
                     scale={[0.029, 0.045, 0.029]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green002_proprty_0.geometry}
                     material={materials.proprty}
                     position={[17.46, 48.279, 93.086]}
@@ -696,8 +75,6 @@ export function Earth(props) {
                     scale={[0.018, 0.027, 0.018]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green003_proprty_0.geometry}
                     material={materials.proprty}
                     position={[56.772, 82.321, 35.565]}
@@ -705,8 +82,6 @@ export function Earth(props) {
                     scale={[0.034, 0.052, 0.034]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green004_proprty_0.geometry}
                     material={materials.proprty}
                     position={[28.782, 95.631, 25.382]}
@@ -714,8 +89,6 @@ export function Earth(props) {
                     scale={[0.022, 0.033, 0.022]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green005_proprty_0.geometry}
                     material={materials.proprty}
                     position={[25.171, 94.818, 34.054]}
@@ -723,8 +96,6 @@ export function Earth(props) {
                     scale={[0.032, 0.05, 0.032]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green006_proprty_0.geometry}
                     material={materials.proprty}
                     position={[34.079, 89.009, 44.969]}
@@ -732,8 +103,6 @@ export function Earth(props) {
                     scale={[0.035, 0.053, 0.035]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green007_proprty_0.geometry}
                     material={materials.proprty}
                     position={[49.394, 51.527, 95.685]}
@@ -741,8 +110,6 @@ export function Earth(props) {
                     scale={[0.023, 0.035, 0.023]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green008_proprty_0.geometry}
                     material={materials.proprty}
                     position={[42.289, 82.977, 49.968]}
@@ -750,8 +117,6 @@ export function Earth(props) {
                     scale={[0.023, 0.036, 0.023]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green009_proprty_0.geometry}
                     material={materials.proprty}
                     position={[47.198, 69.438, 70.929]}
@@ -759,8 +124,6 @@ export function Earth(props) {
                     scale={[0.024, 0.036, 0.024]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green010_proprty_0.geometry}
                     material={materials.proprty}
                     position={[31.385, 99.031, 2.812]}
@@ -768,8 +131,6 @@ export function Earth(props) {
                     scale={[0.031, 0.048, 0.031]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green011_proprty_0.geometry}
                     material={materials.proprty}
                     position={[3.026, 48.671, 93.36]}
@@ -777,8 +138,6 @@ export function Earth(props) {
                     scale={[0.035, 0.053, 0.035]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green012_proprty_0.geometry}
                     material={materials.proprty}
                     position={[59.672, 78.243, 1.418]}
@@ -786,8 +145,6 @@ export function Earth(props) {
                     scale={[0.018, 0.028, 0.018]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green013_proprty_0.geometry}
                     material={materials.proprty}
                     position={[66.324, 73.16, 17.41]}
@@ -795,8 +152,6 @@ export function Earth(props) {
                     scale={[0.027, 0.042, 0.027]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green014_proprty_0.geometry}
                     material={materials.proprty}
                     position={[87.419, -41.076, 67.563]}
@@ -804,8 +159,6 @@ export function Earth(props) {
                     scale={[0.03, 0.045, 0.03]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green015_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-106.516, -10.881, -41.69]}
@@ -813,8 +166,6 @@ export function Earth(props) {
                     scale={[0.03, 0.046, 0.03]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green016_proprty_0.geometry}
                     material={materials.proprty}
                     position={[93.056, 49.918, 18.253]}
@@ -822,8 +173,6 @@ export function Earth(props) {
                     scale={[0.016, 0.025, 0.016]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green017_proprty_0.geometry}
                     material={materials.proprty}
                     position={[80.063, 61.27, 20.441]}
@@ -831,8 +180,6 @@ export function Earth(props) {
                     scale={[0.029, 0.045, 0.029]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green018_proprty_0.geometry}
                     material={materials.proprty}
                     position={[105.232, 33.874, 16.867]}
@@ -840,8 +187,6 @@ export function Earth(props) {
                     scale={[0.033, 0.05, 0.033]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green019_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-83.648, -36.497, -80.662]}
@@ -849,8 +194,6 @@ export function Earth(props) {
                     scale={[0.02, 0.031, 0.02]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green020_proprty_0.geometry}
                     material={materials.proprty}
                     position={[87.602, -66.063, 31.77]}
@@ -858,8 +201,6 @@ export function Earth(props) {
                     scale={[0.024, 0.037, 0.024]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green021_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-82.891, -40.133, -81.543]}
@@ -867,8 +208,6 @@ export function Earth(props) {
                     scale={[0.027, 0.041, 0.027]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green022_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-121.432, -2.04, -12.135]}
@@ -876,8 +215,6 @@ export function Earth(props) {
                     scale={[0.029, 0.044, 0.029]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green023_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-113.961, 29.009, 12.463]}
@@ -885,8 +222,6 @@ export function Earth(props) {
                     scale={[0.024, 0.037, 0.024]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green024_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-109.748, -21.128, -36.814]}
@@ -894,8 +229,6 @@ export function Earth(props) {
                     scale={[0.036, 0.055, 0.036]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green025_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-100.436, -36.236, -51.055]}
@@ -903,8 +236,6 @@ export function Earth(props) {
                     scale={[0.023, 0.036, 0.023]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green026_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-61.912, 32.998, -85.77]}
@@ -912,8 +243,6 @@ export function Earth(props) {
                     scale={[0.022, 0.033, 0.022]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green027_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-70.232, 50.028, -66.575]}
@@ -921,8 +250,6 @@ export function Earth(props) {
                     scale={[0.023, 0.036, 0.023]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green028_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-117.612, 23.137, 7.208]}
@@ -930,8 +257,6 @@ export function Earth(props) {
                     scale={[0.017, 0.026, 0.017]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green029_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-115.783, 27.377, 9.91]}
@@ -939,8 +264,6 @@ export function Earth(props) {
                     scale={[0.019, 0.03, 0.019]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green030_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-112.762, -42.868, -34.576]}
@@ -948,8 +271,6 @@ export function Earth(props) {
                     scale={[0.028, 0.042, 0.028]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green031_proprty_0.geometry}
                     material={materials.proprty}
                     position={[97.412, 45.324, 0.286]}
@@ -957,8 +278,6 @@ export function Earth(props) {
                     scale={[0.026, 0.04, 0.026]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green032_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-111.683, -35.788, -24.685]}
@@ -966,8 +285,6 @@ export function Earth(props) {
                     scale={[0.035, 0.054, 0.035]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green034_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-95.29, -31.81, -57.281]}
@@ -975,8 +292,6 @@ export function Earth(props) {
                     scale={[0.022, 0.034, 0.022]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green035_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-93.845, -38.482, -56.126]}
@@ -984,8 +299,6 @@ export function Earth(props) {
                     scale={[0.022, 0.034, 0.022]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green036_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-73.713, -54.262, -71.308]}
@@ -993,8 +306,6 @@ export function Earth(props) {
                     scale={[0.032, 0.049, 0.032]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green037_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-83.311, -25.479, -76.805]}
@@ -1002,8 +313,6 @@ export function Earth(props) {
                     scale={[0.025, 0.038, 0.025]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green038_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-67.259, 29.586, -83.488]}
@@ -1011,8 +320,6 @@ export function Earth(props) {
                     scale={[0.022, 0.034, 0.022]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green039_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-73.616, 34.546, -76.688]}
@@ -1020,8 +327,6 @@ export function Earth(props) {
                     scale={[0.024, 0.037, 0.024]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green040_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-60.95, 54.874, -71.889]}
@@ -1029,8 +334,6 @@ export function Earth(props) {
                     scale={[0.025, 0.038, 0.025]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green041_proprty_0.geometry}
                     material={materials.proprty}
                     position={[98.816, 21.13, -11.387]}
@@ -1038,8 +341,6 @@ export function Earth(props) {
                     scale={[0.031, 0.047, 0.031]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green042_proprty_0.geometry}
                     material={materials.proprty}
                     position={[69.025, 43.8, 90.207]}
@@ -1047,8 +348,6 @@ export function Earth(props) {
                     scale={[0.028, 0.043, 0.028]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green043_proprty_0.geometry}
                     material={materials.proprty}
                     position={[64.457, 47.922, 91.609]}
@@ -1056,8 +355,6 @@ export function Earth(props) {
                     scale={[0.021, 0.032, 0.021]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green044_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-113.822, -34.942, -36.356]}
@@ -1065,8 +362,6 @@ export function Earth(props) {
                     scale={[0.032, 0.049, 0.032]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green045_proprty_0.geometry}
                     material={materials.proprty}
                     position={[101.671, -40.291, 15.809]}
@@ -1074,8 +369,6 @@ export function Earth(props) {
                     scale={[0.037, 0.056, 0.037]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green046_proprty_0.geometry}
                     material={materials.proprty}
                     position={[104.693, -44.75, 41.462]}
@@ -1083,8 +376,6 @@ export function Earth(props) {
                     scale={[0.023, 0.036, 0.023]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green047_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-80.258, -39.219, -84.381]}
@@ -1092,8 +383,6 @@ export function Earth(props) {
                     scale={[0.034, 0.053, 0.034]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green048_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-82.183, -38.318, -83.253]}
@@ -1101,8 +390,6 @@ export function Earth(props) {
                     scale={[0.018, 0.027, 0.018]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green049_proprty_0.geometry}
                     material={materials.proprty}
                     position={[67.225, -54.943, 67.384]}
@@ -1110,8 +397,6 @@ export function Earth(props) {
                     scale={[0.018, 0.028, 0.018]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green050_proprty_0.geometry}
                     material={materials.proprty}
                     position={[60.815, -59.955, 66.123]}
@@ -1119,8 +404,6 @@ export function Earth(props) {
                     scale={[0.026, 0.039, 0.026]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green051_proprty_0.geometry}
                     material={materials.proprty}
                     position={[11.548, 12.105, 104.894]}
@@ -1128,8 +411,6 @@ export function Earth(props) {
                     scale={[0.028, 0.043, 0.028]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green052_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-69.811, 54.808, -60.32]}
@@ -1137,8 +418,6 @@ export function Earth(props) {
                     scale={[0.019, 0.029, 0.019]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green053_proprty_0.geometry}
                     material={materials.proprty}
                     position={[53.299, -73.234, 60.884]}
@@ -1146,8 +425,6 @@ export function Earth(props) {
                     scale={[0.032, 0.049, 0.032]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green054_proprty_0.geometry}
                     material={materials.proprty}
                     position={[69.982, 42.28, 90.748]}
@@ -1155,8 +432,6 @@ export function Earth(props) {
                     scale={[0.019, 0.029, 0.019]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green055_proprty_0.geometry}
                     material={materials.proprty}
                     position={[98.5, -45.97, 24.711]}
@@ -1164,8 +439,6 @@ export function Earth(props) {
                     scale={[0.031, 0.048, 0.031]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green056_proprty_0.geometry}
                     material={materials.proprty}
                     position={[95.647, -52.102, 15.689]}
@@ -1173,8 +446,6 @@ export function Earth(props) {
                     scale={[0.037, 0.057, 0.037]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green057_proprty_0.geometry}
                     material={materials.proprty}
                     position={[91.765, -60.464, 23.354]}
@@ -1182,8 +453,6 @@ export function Earth(props) {
                     scale={[0.034, 0.052, 0.034]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green058_proprty_0.geometry}
                     material={materials.proprty}
                     position={[98.5, -45.97, 24.711]}
@@ -1191,8 +460,6 @@ export function Earth(props) {
                     scale={[0.032, 0.049, 0.032]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green059_proprty_0.geometry}
                     material={materials.proprty}
                     position={[108.656, -18.359, 31.353]}
@@ -1200,8 +467,6 @@ export function Earth(props) {
                     scale={[0.036, 0.055, 0.036]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green060_proprty_0.geometry}
                     material={materials.proprty}
                     position={[45.204, 52.346, 94.659]}
@@ -1209,8 +474,6 @@ export function Earth(props) {
                     scale={[0.016, 0.025, 0.016]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green061_proprty_0.geometry}
                     material={materials.proprty}
                     position={[106.487, -0.946, 44.443]}
@@ -1218,8 +481,6 @@ export function Earth(props) {
                     scale={[0.028, 0.044, 0.028]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green062_proprty_0.geometry}
                     material={materials.proprty}
                     position={[79.738, -57.803, 56.168]}
@@ -1227,8 +488,6 @@ export function Earth(props) {
                     scale={[0.028, 0.043, 0.028]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green063_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-112.676, -42.465, -38.346]}
@@ -1236,8 +495,6 @@ export function Earth(props) {
                     scale={[0.024, 0.037, 0.024]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green064_proprty_0.geometry}
                     material={materials.proprty}
                     position={[93.635, -28.739, 66.135]}
@@ -1245,8 +502,6 @@ export function Earth(props) {
                     scale={[0.029, 0.044, 0.029]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green065_proprty_0.geometry}
                     material={materials.proprty}
                     position={[98.864, -40.105, 64.735]}
@@ -1254,8 +509,6 @@ export function Earth(props) {
                     scale={[0.035, 0.055, 0.035]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green066_proprty_0.geometry}
                     material={materials.proprty}
                     position={[93.898, -46.247, 64.039]}
@@ -1263,8 +516,6 @@ export function Earth(props) {
                     scale={[0.032, 0.05, 0.032]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green067_proprty_0.geometry}
                     material={materials.proprty}
                     position={[75.143, -72.487, 42.979]}
@@ -1272,8 +523,6 @@ export function Earth(props) {
                     scale={[0.024, 0.037, 0.024]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green068_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-115.848, 15.981, 15.35]}
@@ -1281,8 +530,6 @@ export function Earth(props) {
                     scale={[0.035, 0.053, 0.035]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green070_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-115.354, -15.879, -25.279]}
@@ -1290,8 +537,6 @@ export function Earth(props) {
                     scale={[0.016, 0.025, 0.016]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green071_proprty_0.geometry}
                     material={materials.proprty}
                     position={[93.513, 50.086, 10.347]}
@@ -1299,8 +544,6 @@ export function Earth(props) {
                     scale={[0.035, 0.053, 0.035]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green072_proprty_0.geometry}
                     material={materials.proprty}
                     position={[88.489, 55.465, 3.218]}
@@ -1308,8 +551,6 @@ export function Earth(props) {
                     scale={[0.034, 0.052, 0.034]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green073_proprty_0.geometry}
                     material={materials.proprty}
                     position={[97.662, 45.526, 4.556]}
@@ -1317,8 +558,6 @@ export function Earth(props) {
                     scale={[0.03, 0.046, 0.03]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green074_proprty_0.geometry}
                     material={materials.proprty}
                     position={[93.513, 50.086, 10.347]}
@@ -1326,8 +565,6 @@ export function Earth(props) {
                     scale={[0.029, 0.044, 0.029]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green075_proprty_0.geometry}
                     material={materials.proprty}
                     position={[79.856, 59.287, 46.385]}
@@ -1335,8 +572,6 @@ export function Earth(props) {
                     scale={[0.036, 0.055, 0.036]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green076_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-75.751, 22.862, -75.901]}
@@ -1344,8 +579,6 @@ export function Earth(props) {
                     scale={[0.031, 0.048, 0.031]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green077_proprty_0.geometry}
                     material={materials.proprty}
                     position={[86.247, -52.055, 61.099]}
@@ -1353,8 +586,6 @@ export function Earth(props) {
                     scale={[0.024, 0.037, 0.024]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green078_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-88.352, -38.615, -67.905]}
@@ -1362,8 +593,6 @@ export function Earth(props) {
                     scale={[0.027, 0.042, 0.027]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green079_proprty_0.geometry}
                     material={materials.proprty}
                     position={[42.909, 59.27, 85.067]}
@@ -1371,8 +600,6 @@ export function Earth(props) {
                     scale={[0.019, 0.03, 0.019]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green080_proprty_0.geometry}
                     material={materials.proprty}
                     position={[28.519, 60.321, 83.487]}
@@ -1380,8 +607,6 @@ export function Earth(props) {
                     scale={[0.02, 0.03, 0.02]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green081_proprty_0.geometry}
                     material={materials.proprty}
                     position={[84.587, 59.357, 0.427]}
@@ -1389,8 +614,6 @@ export function Earth(props) {
                     scale={[0.029, 0.044, 0.029]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green082_proprty_0.geometry}
                     material={materials.proprty}
                     position={[31.72, 43.203, 97.9]}
@@ -1398,8 +621,6 @@ export function Earth(props) {
                     scale={[0.02, 0.031, 0.02]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green083_proprty_0.geometry}
                     material={materials.proprty}
                     position={[105.896, -39.863, 47.898]}
@@ -1407,8 +628,6 @@ export function Earth(props) {
                     scale={[0.033, 0.051, 0.033]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green084_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-102.608, -19.592, -50.207]}
@@ -1416,8 +635,6 @@ export function Earth(props) {
                     scale={[0.032, 0.048, 0.032]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green085_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-96.759, -24.355, -58.794]}
@@ -1425,8 +642,6 @@ export function Earth(props) {
                     scale={[0.026, 0.039, 0.026]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green086_proprty_0.geometry}
                     material={materials.proprty}
                     position={[96.363, -49.115, 52.324]}
@@ -1434,8 +649,6 @@ export function Earth(props) {
                     scale={[0.036, 0.055, 0.036]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green087_proprty_0.geometry}
                     material={materials.proprty}
                     position={[81.735, -39.638, 68.625]}
@@ -1443,8 +656,6 @@ export function Earth(props) {
                     scale={[0.017, 0.026, 0.017]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green089_proprty_0.geometry}
                     material={materials.proprty}
                     position={[58.675, 38.448, 94.582]}
@@ -1452,8 +663,6 @@ export function Earth(props) {
                     scale={[0.02, 0.031, 0.02]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green090_proprty_0.geometry}
                     material={materials.proprty}
                     position={[83.171, -71.78, 23.771]}
@@ -1461,8 +670,6 @@ export function Earth(props) {
                     scale={[0.017, 0.027, 0.017]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green091_proprty_0.geometry}
                     material={materials.proprty}
                     position={[80.292, -61.883, 8.498]}
@@ -1470,8 +677,6 @@ export function Earth(props) {
                     scale={[0.035, 0.053, 0.035]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green092_proprty_0.geometry}
                     material={materials.proprty}
                     position={[82.635, 54.239, -21.493]}
@@ -1479,8 +684,6 @@ export function Earth(props) {
                     scale={[0.026, 0.039, 0.026]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green093_proprty_0.geometry}
                     material={materials.proprty}
                     position={[53.559, 83.388, -3.26]}
@@ -1488,8 +691,6 @@ export function Earth(props) {
                     scale={[0.034, 0.052, 0.034]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green094_proprty_0.geometry}
                     material={materials.proprty}
                     position={[70.457, -54.64, 66.042]}
@@ -1497,8 +698,6 @@ export function Earth(props) {
                     scale={[0.019, 0.029, 0.019]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green095_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-16.154, 45.891, 93.782]}
@@ -1506,8 +705,6 @@ export function Earth(props) {
                     scale={[0.017, 0.026, 0.017]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green096_proprty_0.geometry}
                     material={materials.proprty}
                     position={[69.923, 70.797, 16.564]}
@@ -1515,8 +712,6 @@ export function Earth(props) {
                     scale={[0.029, 0.045, 0.029]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green097_proprty_0.geometry}
                     material={materials.proprty}
                     position={[63.417, 75.709, 0.866]}
@@ -1524,8 +719,6 @@ export function Earth(props) {
                     scale={[0.028, 0.043, 0.028]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green098_proprty_0.geometry}
                     material={materials.proprty}
                     position={[71.614, 70.162, 7.657]}
@@ -1533,8 +726,6 @@ export function Earth(props) {
                     scale={[0.034, 0.052, 0.034]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green099_proprty_0.geometry}
                     material={materials.proprty}
                     position={[76.941, 66.249, -0.811]}
@@ -1542,8 +733,6 @@ export function Earth(props) {
                     scale={[0.019, 0.03, 0.019]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green100_proprty_0.geometry}
                     material={materials.proprty}
                     position={[78.773, 61.13, 29.612]}
@@ -1551,8 +740,6 @@ export function Earth(props) {
                     scale={[0.036, 0.055, 0.036]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green101_proprty_0.geometry}
                     material={materials.proprty}
                     position={[29.804, 23.521, 100.01]}
@@ -1560,8 +747,6 @@ export function Earth(props) {
                     scale={[0.027, 0.042, 0.027]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green102_proprty_0.geometry}
                     material={materials.proprty}
                     position={[110.217, 17.706, 26.257]}
@@ -1569,8 +754,6 @@ export function Earth(props) {
                     scale={[0.025, 0.038, 0.025]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green103_proprty_0.geometry}
                     material={materials.proprty}
                     position={[9.274, 74.581, 73.42]}
@@ -1578,8 +761,6 @@ export function Earth(props) {
                     scale={[0.019, 0.028, 0.019]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green104_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-99.499, -8.377, -57.532]}
@@ -1587,8 +768,6 @@ export function Earth(props) {
                     scale={[0.028, 0.043, 0.028]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green105_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-103.103, -2.844, -49.336]}
@@ -1596,8 +775,6 @@ export function Earth(props) {
                     scale={[0.027, 0.041, 0.027]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green106_proprty_0.geometry}
                     material={materials.proprty}
                     position={[110.368, 16.394, 26.83]}
@@ -1605,8 +782,6 @@ export function Earth(props) {
                     scale={[0.033, 0.051, 0.033]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green107_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-21.825, 1.49, 102.844]}
@@ -1614,8 +789,6 @@ export function Earth(props) {
                     scale={[0.024, 0.037, 0.024]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green108_proprty_0.geometry}
                     material={materials.proprty}
                     position={[107.387, 27.741, 1.935]}
@@ -1623,8 +796,6 @@ export function Earth(props) {
                     scale={[0.02, 0.031, 0.02]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green109_proprty_0.geometry}
                     material={materials.proprty}
                     position={[9.846, 13.363, 105.182]}
@@ -1632,8 +803,6 @@ export function Earth(props) {
                     scale={[0.035, 0.053, 0.035]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green111_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-81.755, 1.65, -75.656]}
@@ -1641,8 +810,6 @@ export function Earth(props) {
                     scale={[0.018, 0.027, 0.018]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green112_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-97.135, 50.806, 8.602]}
@@ -1650,8 +817,6 @@ export function Earth(props) {
                     scale={[0.034, 0.053, 0.034]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green113_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-14.378, 50.639, 90.701]}
@@ -1659,8 +824,6 @@ export function Earth(props) {
                     scale={[0.024, 0.036, 0.024]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green114_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-69.132, 0.248, -90.577]}
@@ -1668,8 +831,6 @@ export function Earth(props) {
                     scale={[0.036, 0.056, 0.036]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green117_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-26.547, 11.818, 103.432]}
@@ -1677,8 +838,6 @@ export function Earth(props) {
                     scale={[0.022, 0.034, 0.022]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green118_proprty_0.geometry}
                     material={materials.proprty}
                     position={[64.952, -39.509, 77.849]}
@@ -1686,8 +845,6 @@ export function Earth(props) {
                     scale={[0.034, 0.053, 0.034]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green119_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-58.26, 27.198, -88.909]}
@@ -1695,8 +852,6 @@ export function Earth(props) {
                     scale={[0.017, 0.026, 0.017]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_green120_proprty_0.geometry}
                     material={materials.proprty}
                     position={[93.673, -39.384, -3.218]}
@@ -1704,8 +859,6 @@ export function Earth(props) {
                     scale={[0.034, 0.052, 0.034]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock021_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-110.455, -3.489, -28.01]}
@@ -1713,8 +866,6 @@ export function Earth(props) {
                     scale={0.119}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock022_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-61.72, 60.64, -62.857]}
@@ -1722,8 +873,6 @@ export function Earth(props) {
                     scale={0.08}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock023_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-93.121, -28.87, -63.461]}
@@ -1731,8 +880,6 @@ export function Earth(props) {
                     scale={0.134}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock024_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-88.735, -34.549, -69.607]}
@@ -1740,8 +887,6 @@ export function Earth(props) {
                     scale={0.093}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock025_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-113.961, 29.009, 12.463]}
@@ -1749,8 +894,6 @@ export function Earth(props) {
                     scale={0.129}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock026_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-118.773, 10.374, 7.121]}
@@ -1758,8 +901,6 @@ export function Earth(props) {
                     scale={0.137}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock027_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-88.375, 34.635, -50.475]}
@@ -1767,8 +908,6 @@ export function Earth(props) {
                     scale={0.097}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock028_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-81.3, -15.764, -77.813]}
@@ -1776,8 +915,6 @@ export function Earth(props) {
                     scale={0.098}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock029_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-72.172, 11.208, -86.75]}
@@ -1785,8 +922,6 @@ export function Earth(props) {
                     scale={0.1}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock030_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-115.839, 10.266, -9.779]}
@@ -1794,8 +929,6 @@ export function Earth(props) {
                     scale={0.125}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock031_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-119.872, 7.273, -5.405]}
@@ -1803,8 +936,6 @@ export function Earth(props) {
                     scale={0.137}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock032_proprty_0.geometry}
                     material={materials.proprty}
                     position={[25.859, -53.863, -104.363]}
@@ -1812,8 +943,6 @@ export function Earth(props) {
                     scale={0.082}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock033_proprty_0.geometry}
                     material={materials.proprty}
                     position={[54.306, -35.963, -99.12]}
@@ -1821,8 +950,6 @@ export function Earth(props) {
                     scale={0.113}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock034_proprty_0.geometry}
                     material={materials.proprty}
                     position={[56.75, -27.39, -96.178]}
@@ -1830,8 +957,6 @@ export function Earth(props) {
                     scale={0.12}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock035_proprty_0.geometry}
                     material={materials.proprty}
                     position={[78.784, -31.461, -75.631]}
@@ -1839,8 +964,6 @@ export function Earth(props) {
                     scale={0.122}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock036_proprty_0.geometry}
                     material={materials.proprty}
                     position={[61.538, -56.119, -68.643]}
@@ -1848,8 +971,6 @@ export function Earth(props) {
                     scale={0.075}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock037_proprty_0.geometry}
                     material={materials.proprty}
                     position={[55.245, -58.26, -74.416]}
@@ -1857,8 +978,6 @@ export function Earth(props) {
                     scale={0.118}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock038_proprty_0.geometry}
                     material={materials.proprty}
                     position={[43.714, -42.819, -103.291]}
@@ -1866,8 +985,6 @@ export function Earth(props) {
                     scale={0.131}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock039_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-77.325, 44.285, -59.636]}
@@ -1875,8 +992,6 @@ export function Earth(props) {
                     scale={0.089}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock040_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-71.077, 45.741, -70.572]}
@@ -1884,8 +999,6 @@ export function Earth(props) {
                     scale={0.102}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock041_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-70.232, 50.028, -66.575]}
@@ -1893,8 +1006,6 @@ export function Earth(props) {
                     scale={0.11}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock042_proprty_0.geometry}
                     material={materials.proprty}
                     position={[19.568, -58.496, -96.29]}
@@ -1902,8 +1013,6 @@ export function Earth(props) {
                     scale={0.117}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock043_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-90.078, -21.873, -68.7]}
@@ -1911,8 +1020,6 @@ export function Earth(props) {
                     scale={0.102}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock044_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-95.926, -18.13, -62.559]}
@@ -1920,8 +1027,6 @@ export function Earth(props) {
                     scale={0.141}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock045_proprty_0.geometry}
                     material={materials.proprty}
                     position={[40.231, -62.104, -79.13]}
@@ -1929,8 +1034,6 @@ export function Earth(props) {
                     scale={0.098}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock046_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-115.783, 27.377, 9.91]}
@@ -1938,8 +1041,6 @@ export function Earth(props) {
                     scale={0.093}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock047_proprty_0.geometry}
                     material={materials.proprty}
                     position={[46.587, -56.865, -86.791]}
@@ -1947,8 +1048,6 @@ export function Earth(props) {
                     scale={0.099}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock048_proprty_0.geometry}
                     material={materials.proprty}
                     position={[64.332, -36.989, -93.933]}
@@ -1956,8 +1055,6 @@ export function Earth(props) {
                     scale={0.077}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock049_proprty_0.geometry}
                     material={materials.proprty}
                     position={[69.757, -31.309, -87.786]}
@@ -1965,8 +1062,6 @@ export function Earth(props) {
                     scale={0.086}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock050_proprty_0.geometry}
                     material={materials.proprty}
                     position={[69.28, -24.362, -88.238]}
@@ -1974,8 +1069,6 @@ export function Earth(props) {
                     scale={0.113}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock051_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-104.925, -21.545, -46.327]}
@@ -1983,8 +1076,6 @@ export function Earth(props) {
                     scale={0.109}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock052_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-84.799, -7.885, -73.905]}
@@ -1992,8 +1083,6 @@ export function Earth(props) {
                     scale={0.138}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock053_proprty_0.geometry}
                     material={materials.proprty}
                     position={[81.15, -28.552, -71.936]}
@@ -2001,8 +1090,6 @@ export function Earth(props) {
                     scale={0.082}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock054_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-111.431, -4.134, -26.263]}
@@ -2010,8 +1097,6 @@ export function Earth(props) {
                     scale={0.095}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock055_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-112.644, -17.045, -30.177]}
@@ -2019,8 +1104,6 @@ export function Earth(props) {
                     scale={0.096}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock056_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-88.111, -44.759, -59.549]}
@@ -2028,8 +1111,6 @@ export function Earth(props) {
                     scale={0.127}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock057_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-86.258, -20.565, -72.979]}
@@ -2037,8 +1118,6 @@ export function Earth(props) {
                     scale={0.104}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock058_proprty_0.geometry}
                     material={materials.proprty}
                     position={[20.101, -21.688, -102.158]}
@@ -2046,8 +1125,6 @@ export function Earth(props) {
                     scale={0.095}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock059_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-99.22, -32.238, -52.097]}
@@ -2055,8 +1132,6 @@ export function Earth(props) {
                     scale={0.101}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock060_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-106.132, -11.09, -42.464]}
@@ -2064,8 +1139,6 @@ export function Earth(props) {
                     scale={0.104}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock061_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-71.235, -12.976, -87.411]}
@@ -2073,8 +1146,6 @@ export function Earth(props) {
                     scale={0.124}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock062_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-74.531, -24.699, -84.651]}
@@ -2082,8 +1153,6 @@ export function Earth(props) {
                     scale={0.115}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock063_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-83.311, -25.479, -76.805]}
@@ -2091,8 +1160,6 @@ export function Earth(props) {
                     scale={0.09}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock064_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-79.674, -31.29, -82.673]}
@@ -2100,8 +1167,6 @@ export function Earth(props) {
                     scale={0.127}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock065_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-71.904, 40.756, -74.673]}
@@ -2109,8 +1174,6 @@ export function Earth(props) {
                     scale={0.143}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock066_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-71.468, 53.132, -59.795]}
@@ -2118,8 +1181,6 @@ export function Earth(props) {
                     scale={0.099}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock067_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-80.429, 36.33, -61.271]}
@@ -2127,8 +1188,6 @@ export function Earth(props) {
                     scale={0.136}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock068_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-79.178, 41.763, -58.33]}
@@ -2136,8 +1195,6 @@ export function Earth(props) {
                     scale={0.08}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock069_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-60.95, 54.874, -71.889]}
@@ -2145,8 +1202,6 @@ export function Earth(props) {
                     scale={0.083}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock070_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-69.031, 49.129, -69.339]}
@@ -2154,8 +1209,6 @@ export function Earth(props) {
                     scale={0.106}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock071_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-71.841, 50.308, -62.883]}
@@ -2163,8 +1216,6 @@ export function Earth(props) {
                     scale={0.115}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock072_proprty_0.geometry}
                     material={materials.proprty}
                     position={[58.462, -44.065, -95.444]}
@@ -2172,8 +1223,6 @@ export function Earth(props) {
                     scale={0.084}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock073_proprty_0.geometry}
                     material={materials.proprty}
                     position={[80.161, -2.234, -77.802]}
@@ -2181,8 +1230,6 @@ export function Earth(props) {
                     scale={0.128}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock074_proprty_0.geometry}
                     material={materials.proprty}
                     position={[79.119, -12.56, -79.487]}
@@ -2190,8 +1237,6 @@ export function Earth(props) {
                     scale={0.084}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock075_proprty_0.geometry}
                     material={materials.proprty}
                     position={[86.956, -4.446, -61.015]}
@@ -2199,8 +1244,6 @@ export function Earth(props) {
                     scale={0.126}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock076_proprty_0.geometry}
                     material={materials.proprty}
                     position={[87.765, -19.362, -49.832]}
@@ -2208,8 +1251,6 @@ export function Earth(props) {
                     scale={0.144}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock077_proprty_0.geometry}
                     material={materials.proprty}
                     position={[90.46, -15.505, -41.054]}
@@ -2217,8 +1258,6 @@ export function Earth(props) {
                     scale={0.134}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock078_proprty_0.geometry}
                     material={materials.proprty}
                     position={[86.956, -4.446, -61.015]}
@@ -2226,8 +1265,6 @@ export function Earth(props) {
                     scale={0.128}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock079_proprty_0.geometry}
                     material={materials.proprty}
                     position={[87.765, -19.362, -49.832]}
@@ -2235,8 +1272,6 @@ export function Earth(props) {
                     scale={0.14}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock080_proprty_0.geometry}
                     material={materials.proprty}
                     position={[86.34, 2.252, -64.043]}
@@ -2244,8 +1279,6 @@ export function Earth(props) {
                     scale={0.076}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock081_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-69.811, 54.808, -60.32]}
@@ -2253,8 +1286,6 @@ export function Earth(props) {
                     scale={0.116}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock082_proprty_0.geometry}
                     material={materials.proprty}
                     position={[73.735, -24.215, -82.639]}
@@ -2262,8 +1293,6 @@ export function Earth(props) {
                     scale={0.115}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock083_proprty_0.geometry}
                     material={materials.proprty}
                     position={[78.343, -28.921, -76.107]}
@@ -2271,8 +1300,6 @@ export function Earth(props) {
                     scale={0.102}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock084_proprty_0.geometry}
                     material={materials.proprty}
                     position={[77.862, -18.415, -80.243]}
@@ -2280,8 +1307,6 @@ export function Earth(props) {
                     scale={0.118}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock085_proprty_0.geometry}
                     material={materials.proprty}
                     position={[75.802, -37.84, -75.654]}
@@ -2289,8 +1314,6 @@ export function Earth(props) {
                     scale={0.14}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock086_proprty_0.geometry}
                     material={materials.proprty}
                     position={[79.205, -32.773, -73.703]}
@@ -2298,8 +1321,6 @@ export function Earth(props) {
                     scale={0.129}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock087_proprty_0.geometry}
                     material={materials.proprty}
                     position={[61.113, -44.325, -91.971]}
@@ -2307,8 +1328,6 @@ export function Earth(props) {
                     scale={0.1}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock088_proprty_0.geometry}
                     material={materials.proprty}
                     position={[81.061, 19.076, -69.834]}
@@ -2316,8 +1335,6 @@ export function Earth(props) {
                     scale={0.137}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock089_proprty_0.geometry}
                     material={materials.proprty}
                     position={[80.369, -13.827, -76.794]}
@@ -2325,8 +1342,6 @@ export function Earth(props) {
                     scale={0.139}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock090_proprty_0.geometry}
                     material={materials.proprty}
                     position={[59.475, -46.313, -91.537]}
@@ -2334,8 +1349,6 @@ export function Earth(props) {
                     scale={0.076}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock091_proprty_0.geometry}
                     material={materials.proprty}
                     position={[63.563, -49.836, -79.029]}
@@ -2343,8 +1356,6 @@ export function Earth(props) {
                     scale={0.137}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock092_proprty_0.geometry}
                     material={materials.proprty}
                     position={[70.942, -44.794, -75.922]}
@@ -2352,8 +1363,6 @@ export function Earth(props) {
                     scale={0.135}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock093_proprty_0.geometry}
                     material={materials.proprty}
                     position={[36.684, -54.884, -105.336]}
@@ -2361,8 +1370,6 @@ export function Earth(props) {
                     scale={0.12}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock094_proprty_0.geometry}
                     material={materials.proprty}
                     position={[31.698, -59.357, -100.083]}
@@ -2370,8 +1377,6 @@ export function Earth(props) {
                     scale={0.116}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock095_proprty_0.geometry}
                     material={materials.proprty}
                     position={[22.728, -39.374, -102.155]}
@@ -2379,8 +1384,6 @@ export function Earth(props) {
                     scale={0.14}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock096_proprty_0.geometry}
                     material={materials.proprty}
                     position={[53.909, -39.795, -99.634]}
@@ -2388,8 +1391,6 @@ export function Earth(props) {
                     scale={0.126}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock097_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-106.343, -27.875, -46.034]}
@@ -2397,8 +1398,6 @@ export function Earth(props) {
                     scale={0.102}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock098_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-122.004, -0.264, -8.44]}
@@ -2406,8 +1405,6 @@ export function Earth(props) {
                     scale={0.112}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock099_proprty_0.geometry}
                     material={materials.proprty}
                     position={[48.88, -62.86, -72.151]}
@@ -2415,8 +1412,6 @@ export function Earth(props) {
                     scale={0.086}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock100_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-118.718, 16.15, 7.448]}
@@ -2424,8 +1419,6 @@ export function Earth(props) {
                     scale={0.086}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock101_proprty_0.geometry}
                     material={materials.proprty}
                     position={[36.375, -59.555, -97.681]}
@@ -2433,8 +1426,6 @@ export function Earth(props) {
                     scale={0.118}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock102_proprty_0.geometry}
                     material={materials.proprty}
                     position={[26.36, -41.309, -102.906]}
@@ -2442,8 +1433,6 @@ export function Earth(props) {
                     scale={0.088}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock103_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-53.879, -0.798, -92.569]}
@@ -2451,8 +1440,6 @@ export function Earth(props) {
                     scale={0.133}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock104_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-62.329, 0.505, -93.517]}
@@ -2460,8 +1447,6 @@ export function Earth(props) {
                     scale={0.126}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock105_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-57.937, -6.875, -93.83]}
@@ -2469,8 +1454,6 @@ export function Earth(props) {
                     scale={0.106}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock106_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-113.946, 32.041, 4.157]}
@@ -2478,8 +1461,6 @@ export function Earth(props) {
                     scale={0.14}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock107_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-113.875, 16.18, -8.601]}
@@ -2487,8 +1468,6 @@ export function Earth(props) {
                     scale={0.076}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock108_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-111.72, 15.788, 20.917]}
@@ -2496,8 +1475,6 @@ export function Earth(props) {
                     scale={0.137}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock109_proprty_0.geometry}
                     material={materials.proprty}
                     position={[77.126, 3.613, -83.409]}
@@ -2505,8 +1482,6 @@ export function Earth(props) {
                     scale={0.089}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock110_proprty_0.geometry}
                     material={materials.proprty}
                     position={[27.485, -51.548, -105.71]}
@@ -2514,8 +1489,6 @@ export function Earth(props) {
                     scale={0.079}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock111_proprty_0.geometry}
                     material={materials.proprty}
                     position={[36.825, -52.85, -106.61]}
@@ -2523,8 +1496,6 @@ export function Earth(props) {
                     scale={0.137}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock112_proprty_0.geometry}
                     material={materials.proprty}
                     position={[36.843, -31.264, -100.163]}
@@ -2532,8 +1503,6 @@ export function Earth(props) {
                     scale={0.106}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock113_proprty_0.geometry}
                     material={materials.proprty}
                     position={[44.115, -30.294, -99.076]}
@@ -2541,8 +1510,6 @@ export function Earth(props) {
                     scale={0.134}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock114_proprty_0.geometry}
                     material={materials.proprty}
                     position={[57.109, 5.57, -95.041]}
@@ -2550,8 +1517,6 @@ export function Earth(props) {
                     scale={0.083}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock115_proprty_0.geometry}
                     material={materials.proprty}
                     position={[15.95, -24.037, -101.055]}
@@ -2559,8 +1524,6 @@ export function Earth(props) {
                     scale={0.077}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock116_proprty_0.geometry}
                     material={materials.proprty}
                     position={[80.15, -32.351, -71.538]}
@@ -2568,8 +1531,6 @@ export function Earth(props) {
                     scale={0.119}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock117_proprty_0.geometry}
                     material={materials.proprty}
                     position={[74.917, -41.322, -73.72]}
@@ -2577,8 +1538,6 @@ export function Earth(props) {
                     scale={0.115}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock118_proprty_0.geometry}
                     material={materials.proprty}
                     position={[78.944, -37.101, -68.002]}
@@ -2586,8 +1545,6 @@ export function Earth(props) {
                     scale={0.133}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock119_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-66.937, 2.381, -93.069]}
@@ -2595,8 +1552,6 @@ export function Earth(props) {
                     scale={0.086}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock120_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-94.055, -32.454, -58.877]}
@@ -2604,8 +1559,6 @@ export function Earth(props) {
                     scale={0.142}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock121_proprty_0.geometry}
                     material={materials.proprty}
                     position={[57.448, -51.884, -84.802]}
@@ -2613,8 +1566,6 @@ export function Earth(props) {
                     scale={0.112}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock122_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-112.83, 34.137, 10.759]}
@@ -2622,8 +1573,6 @@ export function Earth(props) {
                     scale={0.104}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock123_proprty_0.geometry}
                     material={materials.proprty}
                     position={[62.183, -36.911, -95.745]}
@@ -2631,8 +1580,6 @@ export function Earth(props) {
                     scale={0.083}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock124_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-99.921, -19.231, -55.612]}
@@ -2640,8 +1587,6 @@ export function Earth(props) {
                     scale={0.115}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock125_proprty_0.geometry}
                     material={materials.proprty}
                     position={[76.839, -15.059, -82.114]}
@@ -2649,8 +1594,6 @@ export function Earth(props) {
                     scale={0.11}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock126_proprty_0.geometry}
                     material={materials.proprty}
                     position={[72.172, 2.298, -90.955]}
@@ -2658,8 +1601,6 @@ export function Earth(props) {
                     scale={0.133}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock127_proprty_0.geometry}
                     material={materials.proprty}
                     position={[34, -70.39, -67.774]}
@@ -2667,8 +1608,6 @@ export function Earth(props) {
                     scale={0.101}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock128_proprty_0.geometry}
                     material={materials.proprty}
                     position={[9.693, -71.836, -69.032]}
@@ -2676,8 +1615,6 @@ export function Earth(props) {
                     scale={0.089}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock129_proprty_0.geometry}
                     material={materials.proprty}
                     position={[41.091, -68.422, -67.88]}
@@ -2685,8 +1622,6 @@ export function Earth(props) {
                     scale={0.137}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock130_proprty_0.geometry}
                     material={materials.proprty}
                     position={[82.05, -33.347, -52.495]}
@@ -2694,8 +1629,6 @@ export function Earth(props) {
                     scale={0.128}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock131_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-102.764, -1.749, -50.025]}
@@ -2703,8 +1636,6 @@ export function Earth(props) {
                     scale={0.08}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock132_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-58.552, 15.37, -93.341]}
@@ -2712,8 +1643,6 @@ export function Earth(props) {
                     scale={0.136}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock133_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-65.663, 18.047, -89.372]}
@@ -2721,8 +1650,6 @@ export function Earth(props) {
                     scale={0.1}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock134_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-91.883, 31.711, -47.204]}
@@ -2730,8 +1657,6 @@ export function Earth(props) {
                     scale={0.143}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock135_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-75.096, 62.12, -37.599]}
@@ -2739,8 +1664,6 @@ export function Earth(props) {
                     scale={0.122}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock136_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-94.284, 30.022, -43.902]}
@@ -2748,8 +1671,6 @@ export function Earth(props) {
                     scale={0.114}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock137_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-82.036, 29.508, -64.392]}
@@ -2757,8 +1678,6 @@ export function Earth(props) {
                     scale={0.096}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock138_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-90, 29.762, -52.36]}
@@ -2766,8 +1685,6 @@ export function Earth(props) {
                     scale={0.136}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock139_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-76.168, -0.081, -82.95]}
@@ -2775,8 +1692,6 @@ export function Earth(props) {
                     scale={0.078}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.rock140_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-59.988, -10.926, -93.229]}
@@ -2784,8 +1699,6 @@ export function Earth(props) {
                     scale={0.134}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white001_proprty_0.geometry}
                     material={materials.proprty}
                     position={[11.847, 97.959, 34.359]}
@@ -2793,8 +1706,6 @@ export function Earth(props) {
                     scale={[0.022, 0.034, 0.022]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white002_proprty_0.geometry}
                     material={materials.proprty}
                     position={[0.333, -102.678, -28.845]}
@@ -2802,8 +1713,6 @@ export function Earth(props) {
                     scale={[0.013, 0.02, 0.013]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white003_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-18.975, -111.506, 6.09]}
@@ -2811,8 +1720,6 @@ export function Earth(props) {
                     scale={[0.025, 0.039, 0.025]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white004_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-8.336, -115.701, 6.563]}
@@ -2820,8 +1727,6 @@ export function Earth(props) {
                     scale={[0.016, 0.025, 0.016]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white005_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-21.752, -112.21, -3.037]}
@@ -2829,8 +1734,6 @@ export function Earth(props) {
                     scale={[0.024, 0.037, 0.024]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white007_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-22.962, -101.309, 18.774]}
@@ -2838,8 +1741,6 @@ export function Earth(props) {
                     scale={[0.017, 0.026, 0.017]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white008_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-3.676, -103.571, -26.319]}
@@ -2847,8 +1748,6 @@ export function Earth(props) {
                     scale={[0.017, 0.026, 0.017]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white009_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-21.016, -108.75, 8.713]}
@@ -2856,8 +1755,6 @@ export function Earth(props) {
                     scale={[0.018, 0.027, 0.018]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white010_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-20.027, -100.873, 22.232]}
@@ -2865,8 +1762,6 @@ export function Earth(props) {
                     scale={[0.023, 0.035, 0.023]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white011_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-28.253, -98.911, 20.82]}
@@ -2874,8 +1769,6 @@ export function Earth(props) {
                     scale={[0.026, 0.04, 0.026]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white013_proprty_0.geometry}
                     material={materials.proprty}
                     position={[10.92, -115.254, -12.707]}
@@ -2883,8 +1776,6 @@ export function Earth(props) {
                     scale={[0.02, 0.031, 0.02]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white014_proprty_0.geometry}
                     material={materials.proprty}
                     position={[16.768, -112.543, -12.092]}
@@ -2892,8 +1783,6 @@ export function Earth(props) {
                     scale={[0.022, 0.034, 0.022]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white015_proprty_0.geometry}
                     material={materials.proprty}
                     position={[22.77, -100.757, 14.908]}
@@ -2901,8 +1790,6 @@ export function Earth(props) {
                     scale={[0.023, 0.035, 0.023]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white016_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-22.31, -109.871, 5.277]}
@@ -2910,8 +1797,6 @@ export function Earth(props) {
                     scale={[0.012, 0.019, 0.012]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white017_proprty_0.geometry}
                     material={materials.proprty}
                     position={[30.061, -103.32, -11.223]}
@@ -2919,8 +1804,6 @@ export function Earth(props) {
                     scale={[0.022, 0.033, 0.022]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white018_proprty_0.geometry}
                     material={materials.proprty}
                     position={[28.54, -102.913, -16.781]}
@@ -2928,8 +1811,6 @@ export function Earth(props) {
                     scale={[0.024, 0.037, 0.024]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white019_proprty_0.geometry}
                     material={materials.proprty}
                     position={[15.798, -114.378, -8.653]}
@@ -2937,8 +1818,6 @@ export function Earth(props) {
                     scale={[0.015, 0.023, 0.015]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white020_proprty_0.geometry}
                     material={materials.proprty}
                     position={[30.061, -103.32, -11.223]}
@@ -2946,8 +1825,6 @@ export function Earth(props) {
                     scale={[0.018, 0.028, 0.018]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white021_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-11.926, -118.886, -5.325]}
@@ -2955,8 +1832,6 @@ export function Earth(props) {
                     scale={[0.02, 0.031, 0.02]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white022_proprty_0.geometry}
                     material={materials.proprty}
                     position={[49.15, 41.153, -99.849]}
@@ -2964,8 +1839,6 @@ export function Earth(props) {
                     scale={[0.021, 0.033, 0.021]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white023_proprty_0.geometry}
                     material={materials.proprty}
                     position={[40.216, 47.681, -100.968]}
@@ -2973,8 +1846,6 @@ export function Earth(props) {
                     scale={[0.018, 0.028, 0.018]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white024_proprty_0.geometry}
                     material={materials.proprty}
                     position={[3.371, -118.633, 0.536]}
@@ -2982,8 +1853,6 @@ export function Earth(props) {
                     scale={[0.027, 0.041, 0.027]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white025_proprty_0.geometry}
                     material={materials.proprty}
                     position={[11.3, -108.114, 7.783]}
@@ -2991,8 +1860,6 @@ export function Earth(props) {
                     scale={[0.017, 0.027, 0.017]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white026_proprty_0.geometry}
                     material={materials.proprty}
                     position={[32.234, 48.067, -99.829]}
@@ -3000,8 +1867,6 @@ export function Earth(props) {
                     scale={[0.016, 0.025, 0.016]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white027_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-45.797, 88.213, -7.973]}
@@ -3009,8 +1874,6 @@ export function Earth(props) {
                     scale={[0.017, 0.027, 0.017]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white028_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-46.222, 88.206, -6.481]}
@@ -3018,8 +1881,6 @@ export function Earth(props) {
                     scale={[0.013, 0.019, 0.013]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white029_proprty_0.geometry}
                     material={materials.proprty}
                     position={[58.403, 36.36, -99.265]}
@@ -3027,8 +1888,6 @@ export function Earth(props) {
                     scale={[0.014, 0.022, 0.014]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white030_proprty_0.geometry}
                     material={materials.proprty}
                     position={[52.73, 41.231, -100.394]}
@@ -3036,8 +1895,6 @@ export function Earth(props) {
                     scale={[0.021, 0.032, 0.021]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white032_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-26.882, 102.391, -12.113]}
@@ -3045,8 +1902,6 @@ export function Earth(props) {
                     scale={[0.026, 0.04, 0.026]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white033_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-6.581, 98.553, 34.752]}
@@ -3054,8 +1909,6 @@ export function Earth(props) {
                     scale={[0.014, 0.021, 0.014]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white036_proprty_0.geometry}
                     material={materials.proprty}
                     position={[16.132, -114.367, -7.732]}
@@ -3063,8 +1916,6 @@ export function Earth(props) {
                     scale={[0.024, 0.036, 0.024]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white037_proprty_0.geometry}
                     material={materials.proprty}
                     position={[31.916, -98.211, -25.809]}
@@ -3072,8 +1923,6 @@ export function Earth(props) {
                     scale={[0.018, 0.028, 0.018]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white038_proprty_0.geometry}
                     material={materials.proprty}
                     position={[33.802, -99.547, -16.777]}
@@ -3081,8 +1930,6 @@ export function Earth(props) {
                     scale={[0.017, 0.026, 0.017]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white039_proprty_0.geometry}
                     material={materials.proprty}
                     position={[41.527, -95.621, -12.069]}
@@ -3090,8 +1937,6 @@ export function Earth(props) {
                     scale={[0.018, 0.027, 0.018]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white041_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-19.069, 108.7, -0.56]}
@@ -3099,8 +1944,6 @@ export function Earth(props) {
                     scale={[0.023, 0.035, 0.023]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white042_proprty_0.geometry}
                     material={materials.proprty}
                     position={[7.885, 103.934, -25.181]}
@@ -3108,8 +1951,6 @@ export function Earth(props) {
                     scale={[0.021, 0.032, 0.021]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white043_proprty_0.geometry}
                     material={materials.proprty}
                     position={[1.87, 110.96, -8.769]}
@@ -3117,8 +1958,6 @@ export function Earth(props) {
                     scale={[0.015, 0.024, 0.015]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white044_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-6.16, 110.867, -7.752]}
@@ -3126,8 +1965,6 @@ export function Earth(props) {
                     scale={[0.024, 0.036, 0.024]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white045_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-16.462, 109.653, 7.006]}
@@ -3135,8 +1972,6 @@ export function Earth(props) {
                     scale={[0.027, 0.042, 0.027]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white046_proprty_0.geometry}
                     material={materials.proprty}
                     position={[2.26, 110.253, 11.953]}
@@ -3144,8 +1979,6 @@ export function Earth(props) {
                     scale={[0.017, 0.027, 0.017]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white047_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-6.111, 111.529, 3.665]}
@@ -3153,8 +1986,6 @@ export function Earth(props) {
                     scale={[0.026, 0.039, 0.026]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white048_proprty_0.geometry}
                     material={materials.proprty}
                     position={[2.367, 109.285, 15.696]}
@@ -3162,8 +1993,6 @@ export function Earth(props) {
                     scale={[0.013, 0.02, 0.013]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white049_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-3.61, 100.334, 32.358]}
@@ -3171,8 +2000,6 @@ export function Earth(props) {
                     scale={[0.014, 0.021, 0.014]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.tree_white050_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-18.699, 101.865, 24.776]}
@@ -3180,8 +2007,6 @@ export function Earth(props) {
                     scale={[0.019, 0.029, 0.019]}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.boat001_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-77.689, -18.385, 56.839]}
@@ -3189,8 +2014,6 @@ export function Earth(props) {
                     scale={0.044}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.boat004_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-22.864, -51.388, -82.79]}
@@ -3198,8 +2021,6 @@ export function Earth(props) {
                     scale={0.044}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.boat005_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-15.386, -26.515, -94.602]}
@@ -3207,8 +2028,6 @@ export function Earth(props) {
                     scale={0.044}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.boat006_proprty_0.geometry}
                     material={materials.proprty}
                     position={[24.363, -54.541, 79.967]}
@@ -3216,8 +2035,6 @@ export function Earth(props) {
                     scale={0.044}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.boat008_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-82.245, -56.343, 3.474]}
@@ -3225,8 +2042,6 @@ export function Earth(props) {
                     scale={0.044}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.boat009_proprty_0.geometry}
                     material={materials.proprty}
                     position={[-52.17, -82.139, 28.583]}
@@ -3234,8 +2049,6 @@ export function Earth(props) {
                     scale={0.044}
                 />
                 <mesh
-                    castShadow
-                    receiveShadow
                     geometry={nodes.boat010_proprty_0.geometry}
                     material={materials.proprty}
                     position={[94.17, 2.924, -32.809]}

@@ -31,12 +31,14 @@ export function Rocket(props) {
                             receiveShadow
                             geometry={nodes['Rocket_Ship_01_Material_#28_0'].geometry}
                             material={materials.Material_28}
+                            material-color="#FF4500"
                         />
                         <mesh
                             castShadow
                             receiveShadow
                             geometry={nodes['Rocket_Ship_01_Material_#27_0'].geometry}
                             material={materials.Material_27}
+                            material-color="#F8F1F1"
                         />
                         <mesh
                             castShadow
@@ -56,6 +58,7 @@ export function Rocket(props) {
                             receiveShadow
                             geometry={nodes['Rocket_Ship_01_Material_#30_0'].geometry}
                             material={materials.Material_30}
+                            material-color="#FFD700"
                         />
                     </group>
                 </group>
