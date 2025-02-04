@@ -22,11 +22,22 @@ export default function App() {
         <>
             <div className="bg"/>
             <h1>
-                Learn <span style={{fontSize: '0.4em'}}>with</span>
+                Goodbye <span style={{fontSize: '0.4em'}}></span>
                 <br/>
-                <span>Mario</span>
+                <span>Planet</span>
             </h1>
-            <Canvas dpr={[1.5, 2]} linear shadows>
+            <Canvas
+                dpr={[1.5, 2]}
+                linear
+                shadows
+                camera={{
+                    fov: 30, // Field of view in degrees
+                    near: 0.1, // Near clipping plane
+                    far: 1000, // Far clipping plane
+                    // position: [3, 2, 5], // Camera position
+                    position: [3, 2, 5], // Camera position
+                }}
+            >
                 <fog attach="fog" args={['#272730', 16, 30]}/>
                 {/*<ambientLight intensity={1.75}/>*/}
                 {/*<PerspectiveCamera makeDefault position={[0, 0, 16]} fov={75}>*/}
@@ -36,17 +47,18 @@ export default function App() {
                 {/*</PerspectiveCamera>*/}
                 {/*<CameraPositionControl/>*/}
                 <Suspense fallback={null}>
-                    <Earth />
-                    <Rocket />
+                    <group position={[-0.3, 0, 0]}>
+                        <Earth />
+                        <Rocket />
+                    </group>
                     <Environment preset="studio" />
                 </Suspense>
-                <OrbitControls autoRotate={false} enablePan={false} enableZoom={true} maxPolarAngle={Math.PI / 2}
-                               minPolarAngle={Math.PI / 2}/>
-                <Stars radius={500} depth={50} count={1000} factor={10}/>
+                <OrbitControls autoRotate={false} enablePan={false} enableZoom={true} />
+                <Stars radius={200} depth={50} count={3000} factor={5}/>
             </Canvas>
             <Loader/>
-            <a href="https://github.com/" className="top-left" children="Github"/>
-            <a href="https://twitter.com/" className="top-right" children="Twitter"/>
+            <a href="https://github.com/" className="top-left">Github</a>
+            <a href="https://twitter.com/" className="top-right">LinkedIn</a>
         </>
     )
 }

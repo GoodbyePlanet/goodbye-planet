@@ -13,7 +13,7 @@ export function Earth(props) {
     const { nodes, materials } = useGLTF('/earth_stylized_low_poly.glb')
     return (
         <group {...props} dispose={null}>
-            <group scale={0.007} >
+            <group scale={0.005} >
                 <mesh
                     castShadow
                     receiveShadow

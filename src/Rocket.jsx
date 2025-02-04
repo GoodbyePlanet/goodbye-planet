@@ -6,7 +6,6 @@ Source: https://sketchfab.com/3d-models/rocket-ship-low-poly-96858de4225f42048c8
 Title: Rocket Ship - Low Poly
 */
 
-import React from 'react'
 import {useGLTF} from '@react-three/drei'
 
 export function Rocket(props) {
@@ -14,9 +13,9 @@ export function Rocket(props) {
     return (
         <group {...props} dispose={null}>
             <group scale={0.012}>
-                <group position={[0, 250, 0]} rotation={[-Math.PI / 2, Math.PI / 4, 0]}>
+                <group position={[-50, 200, 40]} rotation={[-Math.PI / 2, Math.PI / 4, 0]}>
                     {/*<group position={[200, 0.274, 59.551]}>*/}
-                    <group position={[200, 0.274, 39.551]}>
+                    <group position={[250, 0.274, 39.551]}>
                         <mesh
                             castShadow
                             receiveShadow
