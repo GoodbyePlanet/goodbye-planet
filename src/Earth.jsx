@@ -6,24 +6,14 @@ Source: https://sketchfab.com/3d-models/earth-stylized-low-poly-9e6269b0ce7e49f7
 Title: earth stylized low poly
 */
 
-import { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
-import {useFrame} from "@react-three/fiber";
-import {MathUtils} from "three";
+import {useGLTF} from '@react-three/drei'
 
 export function Earth(props) {
-    const earthRef = useRef()
-    const { nodes, materials } = useGLTF('/earth_stylized_low_poly.glb')
+    const {nodes, materials} = useGLTF('/earth_stylized_low_poly.glb')
 
-    useFrame((state, delta) => {
-        if (earthRef.current) {
-            earthRef.current.rotation.y += delta * 0.2;
-        }
-    })
-    const angleInRadians = MathUtils.degToRad(30);
     return (
-        <group ref={earthRef} rotation={[angleInRadians, 0, 0]} {...props} dispose={null}>
-            <group scale={0.005} >
+        <group rotation={[0, 0, 0]} {...props} dispose={null}>
+            <group scale={0.005}>
                 <mesh
                     castShadow
                     receiveShadow
@@ -120,7 +110,7 @@ export function Earth(props) {
                     rotation={[-2.939, 0.097, -1.226]}
                     scale={[0.025, 0.025, 0.02]}
                 />*/}
-             {/*   <mesh
+                {/*   <mesh
                     castShadow
                     receiveShadow
                     geometry={nodes.house005_proprty_0.geometry}

@@ -7,15 +7,25 @@ Title: Rocket Ship - Low Poly
 */
 
 import {useGLTF} from '@react-three/drei'
+import {useRef} from "react";
+import {useFrame} from "@react-three/fiber";
 
 export function Rocket(props) {
+    const rocketRef = useRef()
     const {nodes, materials} = useGLTF('/rocket_ship_-_low_poly.glb')
+
+    useFrame((state, delta) => {
+        if (rocketRef.current) {
+            rocketRef.current.rotation.z += delta * 0.5;
+        }
+    })
+
     return (
         <group {...props} dispose={null}>
             <group scale={0.012}>
                 <group position={[-50, 200, 40]} rotation={[-Math.PI / 2, Math.PI / 4, 0]}>
                     {/*<group position={[200, 0.274, 59.551]}>*/}
-                    <group position={[250, 0.274, 39.551]}>
+                    <group ref={rocketRef} position={[250, 0.274, 39.551]}>
                         <mesh
                             castShadow
                             receiveShadow
