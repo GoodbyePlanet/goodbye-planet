@@ -7,16 +7,30 @@ Title: earth stylized low poly
 */
 
 import {useGLTF} from '@react-three/drei'
+import {useRef} from "react";
+import {useFrame} from "@react-three/fiber";
+import {Color, MathUtils} from "three";
+
+const whiteBloomColor = new Color("#ecf0f3");
+// whiteBloomColor.multiplyScalar(8);
 
 export function Earth(props) {
+    const earthRef = useRef()
     const {nodes, materials} = useGLTF('/earth_stylized_low_poly.glb')
+    useFrame((state, delta) => {
+        if (earthRef.current) {
+            earthRef.current.rotation.y += delta * 0.2;
+        }
+    })
+    const angleInRadians = MathUtils.degToRad(30);
 
     return (
-        <group rotation={[0, 0, 0]} {...props} dispose={null}>
+        <group ref={earthRef} rotation={[angleInRadians, 0, 0]} {...props} dispose={null}>
             <group scale={0.005}>
                 <mesh
                     geometry={nodes.earth001_earth_0.geometry}
                     material={materials.earth}
+                    material-color={whiteBloomColor}
                 />
                 <mesh
                     geometry={nodes.cloud002_proprty_0.geometry}
@@ -24,6 +38,7 @@ export function Earth(props) {
                     position={[74.256, 109.024, -33.825]}
                     rotation={[1.335, 0.705, -1.655]}
                     scale={0.177}
+                    material-color={whiteBloomColor}
                 />
                 <mesh
                     geometry={nodes.cloud004_proprty_0.geometry}

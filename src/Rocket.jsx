@@ -7,32 +7,32 @@ Title: Rocket Ship - Low Poly
 */
 
 import {useGLTF} from '@react-three/drei'
-import {useRef} from "react";
-import {useFrame} from "@react-three/fiber";
+import {Color} from "three";
+
+const blueBloomColor = new Color("#029df8");
+blueBloomColor.multiplyScalar(50);
+const darkBlueBloomColor = new Color("#012b31");
+darkBlueBloomColor.multiplyScalar(10);
+const greyBloomColor = new Color("#c5c1c1");
+greyBloomColor.multiplyScalar(30);
 
 export function Rocket(props) {
-    const rocketRef = useRef()
     const {nodes, materials} = useGLTF('/rocket_ship_-_low_poly.glb')
-
-    useFrame((state, delta) => {
-        if (rocketRef.current) {
-            rocketRef.current.rotation.z += delta * 0.5;
-        }
-    })
-
     return (
         <group {...props} dispose={null}>
             <group scale={0.012}>
                 <group position={[-50, 200, 40]} rotation={[-Math.PI / 2, Math.PI / 4, 0]}>
                     {/*<group position={[200, 0.274, 59.551]}>*/}
-                    <group ref={rocketRef} position={[250, 0.274, 39.551]}>
+                    <group position={[250, 0.274, 39.551]}>
                         <mesh
                             castShadow
                             receiveShadow
                             geometry={nodes['Rocket_Ship_01_Material_#28_0'].geometry}
                             material={materials.Material_28}
-                            material-color="#FF4500"
-                        />
+                            material-color="#89CFF0"
+                        >
+                            {/*<meshBasicMaterial color={darkBlueBloomColor} toneMapped={false}/>*/}
+                        </mesh>
                         <mesh
                             castShadow
                             receiveShadow
@@ -51,15 +51,18 @@ export function Rocket(props) {
                             receiveShadow
                             geometry={nodes['Rocket_Ship_01_Material_#42_0'].geometry}
                             material={materials.Material_42}
-                        />
+                        >
+                            <meshBasicMaterial color={greyBloomColor} toneMapped={false}/>
+                        </mesh>
                         {/*This is blue window*/}
                         <mesh
                             castShadow
                             receiveShadow
                             geometry={nodes['Rocket_Ship_01_Material_#30_0'].geometry}
                             material={materials.Material_30}
-                            material-color="#FFD700"
-                        />
+                        >
+                            <meshBasicMaterial color={blueBloomColor} toneMapped={false}/>
+                        </mesh>
                     </group>
                 </group>
             </group>

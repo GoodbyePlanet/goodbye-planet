@@ -1,8 +1,11 @@
 import React, {Suspense} from 'react'
 import {Canvas} from '@react-three/fiber'
-import {Environment, Loader, OrbitControls, Stars} from '@react-three/drei'
+import {Environment, Loader, OrbitControls, PerspectiveCamera, Stars} from '@react-three/drei'
 import {Earth} from "./Earth.jsx";
 import {Rocket} from "./Rocket.jsx";
+import {Earth1} from "./Earth1.jsx";
+import {Planet} from "./Planet.jsx";
+import {Bloom, EffectComposer} from "@react-three/postprocessing";
 
 // function Model({url}) {
 //     const {nodes} = useGLTF(url)
@@ -44,16 +47,18 @@ export default function App() {
                 {/*    <spotLight castShadow intensity={8.25} angle={1.2} penumbra={1} position={[25, 20, 15]}*/}
                 {/*               shadow-mapSize={[1024, 1024]} shadow-bias={-0.0001}/>*/}
                 {/*</PerspectiveCamera>*/}
-                {/*<CameraPositionControl/>*/}
                 <Suspense fallback={null}>
                     <group position={[-0.3, 0, 0]}>
                         <Earth/>
-                        <Rocket/>
+                        <Rocket />
                     </group>
-                    <Environment preset="studio"/>
+                    <Environment preset="city"/>
                 </Suspense>
                 <OrbitControls autoRotate={false} enablePan={false} enableZoom={true}/>
                 <Stars radius={200} depth={50} count={3000} factor={5}/>
+                <EffectComposer>
+                    <Bloom mipmapBlur intensity={0.3} />
+                </EffectComposer>
             </Canvas>
             <Loader/>
             <a href="https://github.com/" className="top-left">Github</a>

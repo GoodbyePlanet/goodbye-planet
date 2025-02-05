@@ -16,7 +16,7 @@ export function Earth1(props) {
     return (
         <group ref={group} {...props} dispose={null}>
             <group name="Sketchfab_Scene">
-                <group scale={0.01} name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
+                <group scale={0.007} name="Sketchfab_model" rotation={[-Math.PI / 2, 0, 0]}>
                     <group name="7df932a62feb4fc69a7a980f840439fbfbx" rotation={[Math.PI / 2, 0, 0]}>
                         <group name="Object_2">
                             <group name="RootNode">
