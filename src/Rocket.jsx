@@ -9,7 +9,7 @@ Title: Rocket Ship - Low Poly
 import {useGLTF} from '@react-three/drei'
 import {Color} from "three";
 
-const blueBloomColor = new Color("#029df8");
+const blueBloomColor = new Color("#02b6f8");
 blueBloomColor.multiplyScalar(50);
 const darkBlueBloomColor = new Color("#012b31");
 darkBlueBloomColor.multiplyScalar(10);

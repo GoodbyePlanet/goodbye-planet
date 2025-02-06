@@ -1,11 +1,10 @@
-import React, {Suspense} from 'react'
+import React, {Suspense, useRef} from 'react'
 import {Canvas} from '@react-three/fiber'
-import {Environment, Loader, OrbitControls, PerspectiveCamera, Stars} from '@react-three/drei'
+import {Loader, OrbitControls, Stars, useHelper} from '@react-three/drei'
 import {Earth} from "./Earth.jsx";
 import {Rocket} from "./Rocket.jsx";
-import {Earth1} from "./Earth1.jsx";
-import {Planet} from "./Planet.jsx";
 import {Bloom, EffectComposer} from "@react-three/postprocessing";
+import {SpotLightHelper} from "three";
 
 // function Model({url}) {
 //     const {nodes} = useGLTF(url)
@@ -18,6 +17,20 @@ import {Bloom, EffectComposer} from "@react-three/postprocessing";
 //         </group>
 //     )
 // }
+
+function Light() {
+    const spotLightRef = useRef();
+    useHelper(spotLightRef, SpotLightHelper, "white");
+
+    return <spotLight
+        castShadow
+        ref={spotLightRef}
+        penumbra={0.5}
+        position={[0.5, 1.5, -1]}
+        angle={0.5}
+        intensity={20}
+    />
+}
 
 export default function App() {
     return (
@@ -47,17 +60,18 @@ export default function App() {
                 {/*    <spotLight castShadow intensity={8.25} angle={1.2} penumbra={1} position={[25, 20, 15]}*/}
                 {/*               shadow-mapSize={[1024, 1024]} shadow-bias={-0.0001}/>*/}
                 {/*</PerspectiveCamera>*/}
+                <Light/>
                 <Suspense fallback={null}>
                     <group position={[-0.3, 0, 0]}>
                         <Earth/>
-                        <Rocket />
+                        <Rocket/>
                     </group>
-                    <Environment preset="city"/>
+                    {/*<Environment preset="city"/>*/}
                 </Suspense>
                 <OrbitControls autoRotate={false} enablePan={false} enableZoom={true}/>
                 <Stars radius={200} depth={50} count={3000} factor={5}/>
                 <EffectComposer>
-                    <Bloom mipmapBlur intensity={0.3} />
+                    <Bloom mipmapBlur intensity={0.3}/>
                 </EffectComposer>
             </Canvas>
             <Loader/>
