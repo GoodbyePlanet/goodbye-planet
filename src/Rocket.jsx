@@ -6,68 +6,90 @@ Source: https://sketchfab.com/3d-models/rocket-ship-low-poly-96858de4225f42048c8
 Title: Rocket Ship - Low Poly
 */
 
-import {useGLTF} from '@react-three/drei'
-import {Color} from "three";
+import { useGLTF, useHelper } from '@react-three/drei';
+import { Color, SpotLightHelper } from 'three';
+import { useRef } from 'react';
+import * as THREE from 'three';
+import { useControls } from 'leva';
 
-const blueBloomColor = new Color("#02b6f8");
+const blueBloomColor = new Color('#02b6f8');
 blueBloomColor.multiplyScalar(50);
-const darkBlueBloomColor = new Color("#012b31");
+const darkBlueBloomColor = new Color('#012b31');
 darkBlueBloomColor.multiplyScalar(10);
-const greyBloomColor = new Color("#c5c1c1");
-greyBloomColor.multiplyScalar(30);
+const greyBloomColor = new Color('#c5c1c1');
+greyBloomColor.multiplyScalar(0);
 
 export function Rocket(props) {
-    const {nodes, materials} = useGLTF('/rocket_ship_-_low_poly.glb')
-    return (
-        <group {...props} dispose={null}>
-            <group scale={0.012}>
-                <group position={[-50, 200, 40]} rotation={[-Math.PI / 2, Math.PI / 4, 0]}>
-                    {/*<group position={[200, 0.274, 59.551]}>*/}
-                    <group position={[250, 0.274, 39.551]}>
-                        <mesh
-                            castShadow
-                            receiveShadow
-                            geometry={nodes['Rocket_Ship_01_Material_#28_0'].geometry}
-                            material={materials.Material_28}
-                            material-color="#89CFF0"
-                        >
-                            {/*<meshBasicMaterial color={darkBlueBloomColor} toneMapped={false}/>*/}
-                        </mesh>
-                        <mesh
-                            castShadow
-                            receiveShadow
-                            geometry={nodes['Rocket_Ship_01_Material_#27_0'].geometry}
-                            material={materials.Material_27}
-                            material-color="#F8F1F1"
-                        />
-                        <mesh
-                            castShadow
-                            receiveShadow
-                            geometry={nodes['Rocket_Ship_01_Material_#29_0'].geometry}
-                            material={materials.Material_29}
-                        />
-                        <mesh
-                            castShadow
-                            receiveShadow
-                            geometry={nodes['Rocket_Ship_01_Material_#42_0'].geometry}
-                            material={materials.Material_42}
-                        >
-                            <meshBasicMaterial color={greyBloomColor} toneMapped={false}/>
-                        </mesh>
-                        {/*This is blue window*/}
-                        <mesh
-                            castShadow
-                            receiveShadow
-                            geometry={nodes['Rocket_Ship_01_Material_#30_0'].geometry}
-                            material={materials.Material_30}
-                        >
-                            <meshBasicMaterial color={blueBloomColor} toneMapped={false}/>
-                        </mesh>
-                    </group>
-                </group>
+  const { nodes, materials } = useGLTF('/rocket_ship_-_low_poly.glb');
+  const spotLightRef = useRef();
+
+  return (
+    <>
+      <spotLight
+        ref={spotLightRef}
+        position={[2, 5, 2]} // Adjust this to place the light source
+        intensity={40}
+        angle={Math.PI / 6}
+        penumbra={0.5}
+        castShadow
+      />
+      <group {...props} dispose={null}>
+        <group scale={0.012}>
+          <group position={[-50, 200, 40]} rotation={[-Math.PI / 2, Math.PI / 4, 0]}>
+            {/*<group position={[200, 0.274, 59.551]}>*/}
+            <group
+              position={[250, 0.274, 39.551]}
+              ref={(rocketRef) => {
+                if (rocketRef && spotLightRef.current) {
+                  spotLightRef.current.target = rocketRef;
+                }
+              }}
+            >
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes['Rocket_Ship_01_Material_#28_0'].geometry}
+                material={materials.Material_28}
+                material-color="#89CFF0"
+              >
+                {/*<meshBasicMaterial color={darkBlueBloomColor} toneMapped={false}/>*/}
+              </mesh>
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes['Rocket_Ship_01_Material_#27_0'].geometry}
+                material={materials.Material_27}
+                material-color="#F8F1F1"
+              />
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes['Rocket_Ship_01_Material_#29_0'].geometry}
+                material={materials.Material_29}
+              />
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes['Rocket_Ship_01_Material_#42_0'].geometry}
+                material={materials.Material_42}
+              >
+                {/*<meshBasicMaterial color={greyBloomColor} toneMapped={false} />*/}
+              </mesh>
+              {/*This is blue window*/}
+              <mesh
+                castShadow
+                receiveShadow
+                geometry={nodes['Rocket_Ship_01_Material_#30_0'].geometry}
+                material={materials.Material_30}
+              >
+                <meshBasicMaterial color={blueBloomColor} toneMapped={false} />
+              </mesh>
             </group>
+          </group>
         </group>
-    )
+      </group>
+    </>
+  );
 }
 
-useGLTF.preload('/rocket_ship_-_low_poly.glb')
+useGLTF.preload('/rocket_ship_-_low_poly.glb');
