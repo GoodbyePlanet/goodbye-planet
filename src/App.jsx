@@ -21,11 +21,9 @@ export default function App() {
   return (
     <>
       <div className="bg" />
-      <h1>
-        Learn <span style={{ fontSize: '0.4em' }}>with</span>
-        <br />
-        <span>Jason</span>
-      </h1>
+      <h1>Goodbye</h1>
+      <br />
+      <h1 className="planet">Planet</h1>
       <Canvas dpr={[1.5, 2]} linear shadows>
         <fog attach="fog" args={['#272730', 16, 30]} />
         <ambientLight intensity={0.75} />
@@ -41,8 +39,9 @@ export default function App() {
       </Canvas>
       <div className="layer" />
       <Loader />
-      <a href="https://github.com/drcmda/learnwithjason" className="top-left" children="Github" />
-      <a href="https://twitter.com/0xca0a" className="top-right" children="Twitter" />
+      <a href="https://github.com/GoodbyePlanet" className="top-left">
+        Github
+      </a>
     </>
   );
 }
