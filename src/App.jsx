@@ -1,6 +1,6 @@
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import { Environment, Loader, OrbitControls, PerspectiveCamera, Stars, Text } from '@react-three/drei';
+import { Environment, Lightformer, Loader, OrbitControls, PerspectiveCamera, Stars } from '@react-three/drei';
 import { Model } from './Model.jsx';
 import { EarthRocket } from './EarthRocket.jsx';
 import { Bloom, EffectComposer } from '@react-three/postprocessing';
@@ -30,7 +30,9 @@ export default function App() {
         <Suspense fallback={null}>
           <EarthRocket />
           <Model />
-          <Environment preset="sunset" />
+          <Environment preset="sunset">
+            <Lightformer intensity={13} position={[0, 0, 7]} scale={5} form="plane" />
+          </Environment>
         </Suspense>
         <OrbitControls enablePan={true} enableZoom={true} />
         <Stars radius={500} depth={50} count={1000} factor={10} />
