@@ -22,8 +22,8 @@ body {
 }
 
 h1 {
+    text-shadow: 0 0 5px #873740, 0 0 10px #873740, 0 0 20px #873740, 0 0 40px #873740;
     position: absolute;
-    animation: glow 1.5s infinite alternate;
     top: 120px;
     left: 60px;
     font-weight: 900;
@@ -33,12 +33,6 @@ h1 {
     line-height: 0.6em;
     letter-spacing: -2px;
     text-align: left;
-}
-
-@keyframes glow {
-    0% { text-shadow: 0 0 10px #873740, 0 0 20px #873740, 0 0 30px #873740; }
-    50% { text-shadow: 0 0 20px #873740, 0 0 30px #873740, 0 0 40px #873740; }
-    100% { text-shadow: 0 0 10px #873740, 0 0 20px #873740, 0 0 30px #873740; }
 }
 
 .planet {
