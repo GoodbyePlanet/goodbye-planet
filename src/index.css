@@ -1,28 +1,29 @@
-html,
-body,
-#root,
-.bg,
-canvas {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
+#root, .bg {
+    width: 100vw;
+    height: 100vh;
 }
 
 body {
+    margin: 0;
     background: #444040;
     font-family: 'Inter var', sans-serif;
 }
 
+#root, .bg {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
 .bg {
     position: absolute;
-    /*background: radial-gradient(at 1% 10%, #a49e9e 0%, #272730 0%, #171720 80%, #070710 100%);*/
     background: radial-gradient(at 50% 100%, #873740 0%, #272730 40%, #171720 80%, #070710 100%);
-
 }
 
 h1 {
     position: absolute;
+    animation: glow 1.5s infinite alternate;
     top: 120px;
     left: 60px;
     font-weight: 900;
@@ -32,6 +33,12 @@ h1 {
     line-height: 0.6em;
     letter-spacing: -2px;
     text-align: left;
+}
+
+@keyframes glow {
+    0% { text-shadow: 0 0 10px #873740, 0 0 20px #873740, 0 0 30px #873740; }
+    50% { text-shadow: 0 0 20px #873740, 0 0 30px #873740, 0 0 40px #873740; }
+    100% { text-shadow: 0 0 10px #873740, 0 0 20px #873740, 0 0 30px #873740; }
 }
 
 .planet {
@@ -47,10 +54,6 @@ h1 {
     text-align: left;
 }
 
-h1 > span {
-    white-space: pre;
-}
-
 .layer {
     position: absolute;
     bottom: 0;
@@ -61,66 +64,66 @@ h1 > span {
     pointer-events: none;
 }
 
-span.header {
-    font-weight: 700;
-    position: absolute;
-    display: inline-block;
-    width: 500px;
-    transform: translate3d(0, -50%, 0);
-    font-size: 9em;
-    line-height: 0.9em;
-    pointer-events: none;
-    top: 350px;
-    left: 50px;
-}
+/*span.header {*/
+/*    font-weight: 700;*/
+/*    position: absolute;*/
+/*    display: inline-block;*/
+/*    width: 500px;*/
+/*    transform: translate3d(0, -50%, 0);*/
+/*    font-size: 9em;*/
+/*    line-height: 0.9em;*/
+/*    pointer-events: none;*/
+/*    top: 350px;*/
+/*    left: 50px;*/
+/*}*/
 
-span.header-left {
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 700;
-    position: absolute;
-    display: inline-block;
-    transform: translate3d(0, -50%, 0);
-    line-height: 1em;
-    top: 200px;
-    left: 60px;
-    font-size: 4em;
-    width: 200px;
-}
+/*span.header-left {*/
+/*    font-family: 'Josefin Sans', sans-serif;*/
+/*    font-weight: 700;*/
+/*    position: absolute;*/
+/*    display: inline-block;*/
+/*    transform: translate3d(0, -50%, 0);*/
+/*    line-height: 1em;*/
+/*    top: 200px;*/
+/*    left: 60px;*/
+/*    font-size: 4em;*/
+/*    width: 200px;*/
+/*}*/
 
-a {
-    font-weight: 400;
-    font-size: 14px;
-    color: inherit;
-    position: absolute;
-    display: inline;
-    text-decoration: none;
-    z-index: 1;
-    color: white;
-}
+/*a {*/
+/*    font-weight: 400;*/
+/*    font-size: 14px;*/
+/*    color: inherit;*/
+/*    position: absolute;*/
+/*    display: inline;*/
+/*    text-decoration: none;*/
+/*    z-index: 1;*/
+/*    color: white;*/
+/*}*/
 
-a.top-left {
-    top: 60px;
-    left: 60px;
-}
+/*a.top-left {*/
+/*    top: 60px;*/
+/*    left: 60px;*/
+/*}*/
 
-a.top-right {
-    top: 60px;
-    right: 60px;
-}
+/*a.top-right {*/
+/*    top: 60px;*/
+/*    right: 60px;*/
+/*}*/
 
-a.bottom-left {
-    bottom: 60px;
-    left: 60px;
-}
+/*a.bottom-left {*/
+/*    bottom: 60px;*/
+/*    left: 60px;*/
+/*}*/
 
-a.bottom-right {
-    bottom: 60px;
-    right: 60px;
-}
+/*a.bottom-right {*/
+/*    bottom: 60px;*/
+/*    right: 60px;*/
+/*}*/
 
-.middlesection {
-    background: gray;
-    padding: 20px;
-    text-align: center;
-    color: white;
-}
+/*.middlesection {*/
+/*    background: gray;*/
+/*    padding: 20px;*/
+/*    text-align: center;*/
+/*    color: white;*/
+/*}*/

@@ -6,115 +6,110 @@ Source: https://sketchfab.com/3d-models/rocket-scene-a58dcf289796461e8a8d5bff3f1
 Title: Rocket Scene
 */
 
-import React, { useRef } from 'react'
-import { useGLTF } from '@react-three/drei'
+import { useGLTF } from '@react-three/drei';
+import { Color } from 'three';
+
+const yellowBloomColor = new Color('#dc805f');
+yellowBloomColor.multiplyScalar(15);
+const whiteBloomColor = new Color('#de3535');
+whiteBloomColor.multiplyScalar(7);
 
 export function EarthRocket(props) {
-    const { nodes, materials } = useGLTF('/rocket_scene.glb')
-    return (
-        <group {...props} scale={0.02} position={[0, -15, 0]} dispose={null}>
-            {/*<mesh*/}
-            {/*    castShadow*/}
-            {/*    receiveShadow*/}
-            {/*    geometry={nodes.Moon_Moon1_0.geometry}*/}
-            {/*    material={materials.Moon1}*/}
-            {/*/>*/}
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Hull_Hull1_0.geometry}
-                material={materials.Hull1}
-                position={[0, 322.933, 0]}
-                scale={[0.594, 0.178, 0.594]}
-            />
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Blast1_Blast_0.geometry}
-                material={materials.Blast}
-                position={[0, 98.943, 0]}
-            />
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Blast2_Blast_0.geometry}
-                material={materials.Blast}
-                position={[0, 98.943, 0]}
-            />
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Strut2_Strut_0.geometry}
-                material={materials.Strut}
-                position={[0, 98.943, 0]}
-                rotation={[0, Math.PI / 2, 0]}
-            />
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Strut3_Strut_0.geometry}
-                material={materials.Strut}
-                position={[0, 98.943, 0]}
-                rotation={[-Math.PI, 0, -Math.PI]}
-            />
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Strut4_Strut_0.geometry}
-                material={materials.Strut}
-                position={[0, 98.943, 0]}
-                rotation={[0, -Math.PI / 2, 0]}
-            />
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Asteroids_Moon1_0.geometry}
-                material={materials.Moon1}
-            />
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Asteroids1_Moon1_0.geometry}
-                material={materials.Moon1}
-                position={[54.733, -297.942, -30.871]}
-                rotation={[0, 1.309, 0]}
-                scale={1.781}
-            />
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.Strut1_Strut_0.geometry}
-                material={materials.Strut}
-            />
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.StrutBlast1_Blast_0.geometry}
-                material={materials.Blast}
-            />
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.StrutBlast2_Blast_0.geometry}
-                material={materials.Blast}
-                rotation={[0, Math.PI / 2, 0]}
-            />
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.StrutBlast3_Blast_0.geometry}
-                material={materials.Blast}
-                rotation={[-Math.PI, 0, -Math.PI]}
-            />
-            <mesh
-                castShadow
-                receiveShadow
-                geometry={nodes.StrutBlast4_Blast_0.geometry}
-                material={materials.Blast}
-                rotation={[0, -Math.PI / 2, 0]}
-            />
-        </group>
-    )
+  const { nodes, materials } = useGLTF('/rocket_scene.glb');
+  return (
+    <group {...props} scale={0.02} position={[0, -15, 0]} dispose={null}>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Hull_Hull1_0.geometry}
+        material={materials.Hull1}
+        position={[0, 322.933, 0]}
+        scale={[0.594, 0.178, 0.594]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Blast1_Blast_0.geometry}
+        material={materials.Blast}
+        position={[0, 98.943, 0]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Blast2_Blast_0.geometry}
+        material={materials.Blast}
+        position={[0, 98.943, 0]}
+      >
+        <meshBasicMaterial color={yellowBloomColor} toneMapped={false} />
+      </mesh>
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Strut2_Strut_0.geometry}
+        material={materials.Strut}
+        position={[0, 98.943, 0]}
+        rotation={[0, Math.PI / 2, 0]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Strut3_Strut_0.geometry}
+        material={materials.Strut}
+        position={[0, 98.943, 0]}
+        rotation={[-Math.PI, 0, -Math.PI]}
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Strut4_Strut_0.geometry}
+        material={materials.Strut}
+        position={[0, 98.943, 0]}
+        rotation={[0, -Math.PI / 2, 0]}
+      />
+      <mesh castShadow receiveShadow geometry={nodes.Asteroids_Moon1_0.geometry} material={materials.Moon1} />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.Asteroids1_Moon1_0.geometry}
+        material={materials.Moon1}
+        position={[54.733, -297.942, -30.871]}
+        rotation={[0, 1.309, 0]}
+        scale={1.781}
+      />
+      <mesh castShadow receiveShadow geometry={nodes.Strut1_Strut_0.geometry} material={materials.Strut} />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.StrutBlast1_Blast_0.geometry}
+        material={materials.Blast}
+        material-color="#ffffff"
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.StrutBlast2_Blast_0.geometry}
+        material={materials.Blast}
+        rotation={[0, Math.PI / 2, 0]}
+        material-color="#ffffff"
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.StrutBlast3_Blast_0.geometry}
+        material={materials.Blast}
+        rotation={[-Math.PI, 0, -Math.PI]}
+        material-color="#ffffff"
+      />
+      <mesh
+        castShadow
+        receiveShadow
+        geometry={nodes.StrutBlast4_Blast_0.geometry}
+        material={materials.Blast}
+        rotation={[0, -Math.PI / 2, 0]}
+        material-color="#ffffff"
+      />
+    </group>
+  );
 }
 
-useGLTF.preload('/rocket_scene.glb')
+useGLTF.preload('/rocket_scene.glb');
