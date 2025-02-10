@@ -1,13 +1,9 @@
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { Environment, Lightformer, Loader, OrbitControls, PerspectiveCamera, Stars } from '@react-three/drei';
+import { Bloom, EffectComposer } from '@react-three/postprocessing';
 import { Model } from './Model.jsx';
 import { EarthRocket } from './EarthRocket.jsx';
-import { Bloom, EffectComposer } from '@react-three/postprocessing';
-
-function PerCamera() {
-  return <PerspectiveCamera makeDefault position={[-9.6, -9.7, 19.8]} fov={75}></PerspectiveCamera>;
-}
 
 export default function App() {
   return (
